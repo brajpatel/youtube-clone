@@ -1,10 +1,13 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SignedOutPackage from './components/signed-out-package/SignedOutPackage';
 
 function App() {
   return (
-    <div className="App">
-      Ready to go
-    </div>
+    <BrowserRouter>
+      <SignedOutPackage/>
+      <Routes></Routes>
+    </BrowserRouter>
   );
 }
 
