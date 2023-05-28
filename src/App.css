@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .app {
@@ -15,9 +16,31 @@ header {
   background: white;
 }
 
+nav,
+nav ul,
+.page-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 nav {
   grid-area: 1 / 1 / 3 / 2;
   background: white;
+  gap: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.page-link {
+  color: black;
+}
+
+.page-link p {
+  font-size: 1.1rem;
 }
 
 .home-page {
