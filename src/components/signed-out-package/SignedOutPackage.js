@@ -14,7 +14,7 @@ function SignedOutPackage() {
     return (
         <>
             <Header/>
-            {sidebarToggle ? null : <SignedOutSidebarSmall toggleSidebar={toggleSidebar}/>}
+            {sidebarToggle ? <SignedOutSidebar toggleSidebar={toggleSidebar}/> : <SignedOutSidebarSmall toggleSidebar={toggleSidebar}/>}
         </>
     )
 }

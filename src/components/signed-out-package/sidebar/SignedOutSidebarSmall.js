@@ -1,3 +1,4 @@
+import "./SignedOutSidebarSmall.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdHomeFilled } from "react-icons/md";
 import { MdOutlineExplore } from "react-icons/md";
@@ -10,9 +11,9 @@ function SignedOutSidebarSmall(props) {
     const { toggleSidebar } = props;
 
     return (
-        <nav>
-            <div className="hamburger" onClick={toggleSidebar}>
-                <RxHamburgerMenu/>
+        <nav className="side-bar-small">
+            <div className="hamburger-container" onClick={toggleSidebar}>
+                <RxHamburgerMenu className="burger"/>
             </div>
             <ul>
                 <Link to="/" className="page-link">
