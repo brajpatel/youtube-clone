@@ -8,11 +8,11 @@ import { GrHistory } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
 function SignedOutSidebar(props) {
-    const { toggleSidebar }  = props;
+    const { sidebarToggle, toggleSidebar }  = props;
 
     return (
-        <div className="overlay">
-            <nav className="sidebar">
+        <div className={sidebarToggle ? "overlay show-overlay" : "overlay"}>
+            <nav className={sidebarToggle ? "sidebar expand-sidebar" : "sidebar hide-sidebar"}>
                 <div className="hamburger-container" onClick={toggleSidebar}>
                     <RxHamburgerMenu className="burger"/>
                     <Link to="/">
