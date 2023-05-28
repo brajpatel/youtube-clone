@@ -1,37 +1,47 @@
+import { RxHamburgerMenu } from "react-icons/rx";
+import { MdHomeFilled } from "react-icons/md";
+import { MdOutlineExplore } from "react-icons/md";
+import { BsCollectionPlay } from "react-icons/bs";
+import { MdOutlineVideoLibrary } from "react-icons/md";
+import { GrHistory } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
-function SignedOutSidebarSmall() {
+function SignedOutSidebarSmall(props) {
+    const { toggleSidebar } = props;
+
     return (
         <nav>
-            <div>Hamburger</div>
+            <div className="hamburger" onClick={toggleSidebar}>
+                <RxHamburgerMenu/>
+            </div>
             <ul>
                 <Link to="/">
                     <li className="page-link">
-                        <p>Svg here</p>
+                        <MdHomeFilled className="sidebar-icon"/>
                         <p>Home</p>
                     </li>
                 </Link>
                 <Link to="/">
                     <li className="page-link">
-                        <p>Svg here</p>
-                        <p>Shorts</p>
+                        <MdOutlineExplore className="sidebar-icon"/>
+                        <p>Explore</p>
                     </li>
                 </Link>
                 <Link to="/">
                     <li className="page-link">
-                        <p>Svg here</p>
+                        <BsCollectionPlay className="sidebar-icon"/>
                         <p>Subscriptions</p>
                     </li>
                 </Link>
                 <Link to="/">
                     <li className="page-link">
-                        <p>Svg here</p>
+                        <MdOutlineVideoLibrary className="sidebar-icon"/>
                         <p>Library</p>
                     </li>
                 </Link>
                 <Link to="/">
                     <li className="page-link">
-                        <p>Svg here</p>
+                        <GrHistory className="sidebar-icon"/>
                         <p>History</p>
                     </li>
                 </Link>
