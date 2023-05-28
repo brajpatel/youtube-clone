@@ -5,17 +5,17 @@ import SignedOutSidebarSmall from "./sidebar/SignedOutSidebarSmall";
 import HomePage from "../HomePage";
 
 function SignedOutPackage() {
-    const [sidebarToggle, setSidebarToggle] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggleSidebar = () => {
-        setSidebarToggle(!sidebarToggle);
+        setIsOpen(!isOpen);
     }
 
     return (
         <>
             <Header/>
             <SignedOutSidebarSmall toggleSidebar={toggleSidebar}/>
-            <SignedOutSidebar sidebarToggle={sidebarToggle} toggleSidebar={toggleSidebar}/>
+            <SignedOutSidebar isOpen={isOpen} toggleSidebar={toggleSidebar}/>
         </>
     )
 }
