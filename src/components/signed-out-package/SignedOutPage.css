@@ -2,8 +2,8 @@
     grid-area: 2 / 2 / 3 / 3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-top: 15vh;
     gap: 1rem;
 }
 
@@ -20,13 +20,43 @@
 }
 
 .signed-out-history {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template: 1fr / 3fr 1fr;
+}
+
+.signed-out-history .signed-out-page {
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 .signed-out-history .signed-out-page p:nth-child(3) > a {
     color: rgb(6, 95, 212);
     margin-left: 0.1rem;
+}
+
+.history-type {
+    width: 90%;
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.history-type p {
+    padding: 1.6rem 1rem;
+}
+
+.history-type div {
+    padding: 1.6rem 1rem;
+    border-top: 1px solid rgb(216, 216, 216);
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-type div:last-child {
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.history-type div > label {
+    cursor: pointer;
 }
 
 .sign-in-button {

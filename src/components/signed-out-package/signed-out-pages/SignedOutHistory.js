@@ -15,8 +15,16 @@ function SignedOutHistory() {
                 </p>
                 <SignInButton/>
             </div>
-            <div>
-                Other stuff
+            <div className="history-type">
+                <p>History type</p>
+                <div>
+                    <label for="watch-history">Watch history</label>
+                    <input id="watch-history" name="history-type" type="radio" checked/>
+                </div>
+                <div>
+                    <label for="community">Community</label>
+                    <input id="community" name="history-type" type="radio"/>
+                </div>
             </div>
         </div>
 
