@@ -22,19 +22,13 @@ function SignedOutSidebarSmall(props) {
                         <p>Home</p>
                     </li>
                 </Link>
-                <Link to="/" className="page-link">
-                    <li>
-                        <MdOutlineExplore className="sidebar-icon"/>
-                        <p>Explore</p>
-                    </li>
-                </Link>
                 <Link to="/subscriptions" className="page-link">
                     <li>
                         <BsCollectionPlay className="sidebar-icon"/>
                         <p>Subscriptions</p>
                     </li>
                 </Link>
-                <Link to="/" className="page-link">
+                <Link to="/library" className="page-link">
                     <li>
                         <MdOutlineVideoLibrary className="sidebar-icon"/>
                         <p>Library</p>

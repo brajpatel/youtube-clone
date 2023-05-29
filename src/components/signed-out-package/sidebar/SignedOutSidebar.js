@@ -27,19 +27,13 @@ function SignedOutSidebar(props) {
                             <p>Home</p>
                         </li>
                     </Link>
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
-                        <li>
-                            <MdOutlineExplore className="sidebar-icon"/>
-                            <p>Explore</p>
-                        </li>
-                    </Link>
                     <Link to="/subscriptions" className="page-link" onClick={toggleSidebar}>
                         <li>
                             <BsCollectionPlay className="sidebar-icon"/>
                             <p>Subscriptions</p>
                         </li>
                     </Link>
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
+                    <Link to="/library" className="page-link" onClick={toggleSidebar}>
                         <li>
                             <MdOutlineVideoLibrary className="sidebar-icon"/>
                             <p>Library</p>
