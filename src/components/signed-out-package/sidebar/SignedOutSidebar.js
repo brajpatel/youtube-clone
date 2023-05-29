@@ -5,14 +5,14 @@ import { MdOutlineExplore } from "react-icons/md";
 import { BsCollectionPlay } from "react-icons/bs";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 import { GrHistory } from "react-icons/gr";
-import { FaRegUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import SignInButton from "../SignInButton";
 
 function SignedOutSidebar(props) {
     const { isOpen, toggleSidebar }  = props;
 
     return (
-        <div className={`overlay ${isOpen ? 'show' : ''}`}>
+        <div className={`overlay ${isOpen ? 'show' : ''}`} onClick={toggleSidebar}>
             <nav className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="hamburger-container" onClick={toggleSidebar}>
                     <RxHamburgerMenu className="burger"/>
@@ -53,7 +53,7 @@ function SignedOutSidebar(props) {
                     </Link>
                     <div className="sign-in-prompt">
                         <p>Sign in to like videos, comment and subscribe.</p>
-                        <button><FaRegUserCircle/>Sign in</button>
+                        <SignInButton/>
                     </div>
                 </ul>
             </nav>
