@@ -19,6 +19,16 @@
     font-size: 1.4rem;
 }
 
+.signed-out-history {
+    display: flex;
+    justify-content: space-around;
+}
+
+.signed-out-history .signed-out-page p:nth-child(3) > a {
+    color: rgb(6, 95, 212);
+    margin-left: 0.1rem;
+}
+
 .sign-in-button {
     color: rgb(6, 95, 212);
     font-size: 1.2rem;

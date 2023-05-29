@@ -34,7 +34,7 @@ function SignedOutSidebarSmall(props) {
                         <p>Library</p>
                     </li>
                 </Link>
-                <Link to="/" className="page-link">
+                <Link to="/history" className="page-link">
                     <li>
                         <GrHistory className="sidebar-icon"/>
                         <p>History</p>

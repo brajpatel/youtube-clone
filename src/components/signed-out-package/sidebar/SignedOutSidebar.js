@@ -39,7 +39,7 @@ function SignedOutSidebar(props) {
                             <p>Library</p>
                         </li>
                     </Link>
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
+                    <Link to="/history" className="page-link" onClick={toggleSidebar}>
                         <li>
                             <GrHistory className="sidebar-icon"/>
                             <p>History</p>
