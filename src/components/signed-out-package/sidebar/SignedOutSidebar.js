@@ -33,7 +33,7 @@ function SignedOutSidebar(props) {
                             <p>Explore</p>
                         </li>
                     </Link>
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
+                    <Link to="/subscriptions" className="page-link" onClick={toggleSidebar}>
                         <li>
                             <BsCollectionPlay className="sidebar-icon"/>
                             <p>Subscriptions</p>

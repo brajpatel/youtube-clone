@@ -28,7 +28,7 @@ function SignedOutSidebarSmall(props) {
                         <p>Explore</p>
                     </li>
                 </Link>
-                <Link to="/" className="page-link">
+                <Link to="/subscriptions" className="page-link">
                     <li>
                         <BsCollectionPlay className="sidebar-icon"/>
                         <p>Subscriptions</p>
