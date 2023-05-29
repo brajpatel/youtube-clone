@@ -1,0 +1,44 @@
+.signed-out-page {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signed-out-page-icon {
+    font-size: 6.5rem;
+}
+
+.signed-out-page p:nth-child(2) {
+    font-size: 2.5rem;
+}
+
+.signed-out-page p:nth-child(3) {
+    font-size: 1.4rem;
+}
+
+.sign-in-button {
+    color: rgb(6, 95, 212);
+    font-size: 1.2rem;
+    background: transparent;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.6rem;
+}
+
+.sign-in-button:hover {
+    background: rgba(62, 165, 255, 0.2);
+    border-color: rgba(62, 165, 255, 0.2);
+}
+
+.sign-in-button:active {
+    background: rgb(147, 181, 211, 0.4);
+}

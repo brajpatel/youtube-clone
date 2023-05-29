@@ -2,7 +2,7 @@ import { FaRegUserCircle } from "react-icons/fa";
 
 function SignInButton() {
     return (
-        <button><FaRegUserCircle/>Sign in</button>
+        <button className="sign-in-button"><FaRegUserCircle/>Sign in</button>
     )
 }
 

@@ -1,3 +1,4 @@
+import "../SignedOutPage.css";
 import { BsCollectionPlay } from "react-icons/bs";
 import SignInButton from "../SignInButton";
 
