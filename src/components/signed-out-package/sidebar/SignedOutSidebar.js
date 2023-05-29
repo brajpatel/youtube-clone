@@ -5,6 +5,7 @@ import { MdOutlineExplore } from "react-icons/md";
 import { BsCollectionPlay } from "react-icons/bs";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 import { GrHistory } from "react-icons/gr";
+import { FaRegUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function SignedOutSidebar(props) {
@@ -20,36 +21,40 @@ function SignedOutSidebar(props) {
                     </Link>
                 </div>
                 <ul>
-                    <Link to="/" className="page-link">
+                    <Link to="/" className="page-link" onClick={toggleSidebar}>
                         <li>
                             <MdHomeFilled className="sidebar-icon"/>
                             <p>Home</p>
                         </li>
                     </Link>
-                    <Link to="/" className="page-link">
+                    <Link to="/" className="page-link" onClick={toggleSidebar}>
                         <li>
                             <MdOutlineExplore className="sidebar-icon"/>
                             <p>Explore</p>
                         </li>
                     </Link>
-                    <Link to="/" className="page-link">
+                    <Link to="/" className="page-link" onClick={toggleSidebar}>
                         <li>
                             <BsCollectionPlay className="sidebar-icon"/>
                             <p>Subscriptions</p>
                         </li>
                     </Link>
-                    <Link to="/" className="page-link">
+                    <Link to="/" className="page-link" onClick={toggleSidebar}>
                         <li>
                             <MdOutlineVideoLibrary className="sidebar-icon"/>
                             <p>Library</p>
                         </li>
                     </Link>
-                    <Link to="/" className="page-link">
+                    <Link to="/" className="page-link" onClick={toggleSidebar}>
                         <li>
                             <GrHistory className="sidebar-icon"/>
                             <p>History</p>
                         </li>
                     </Link>
+                    <div className="sign-in-prompt">
+                        <p>Sign in to like videos, comment and subscribe.</p>
+                        <button><FaRegUserCircle/>Sign in</button>
+                    </div>
                 </ul>
             </nav>
         </div>
