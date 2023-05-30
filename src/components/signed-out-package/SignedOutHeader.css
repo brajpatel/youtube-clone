@@ -1,0 +1,10 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 0;
+}
+
+.youtube-logo {
+    max-height: 30px;
+}

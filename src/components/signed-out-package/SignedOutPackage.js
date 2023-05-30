@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Header from "./Header";
+import SignedOutHeader from "./SignedOutHeader";
 import SignedOutSidebar from "./sidebar/SignedOutSidebar";
 import SignedOutSidebarSmall from "./sidebar/SignedOutSidebarSmall";
 
@@ -12,7 +12,7 @@ function SignedOutPackage() {
 
     return (
         <>
-            <Header/>
+            <SignedOutHeader/>
             <SignedOutSidebarSmall toggleSidebar={toggleSidebar}/>
             <SignedOutSidebar isOpen={isOpen} toggleSidebar={toggleSidebar}/>
         </>
