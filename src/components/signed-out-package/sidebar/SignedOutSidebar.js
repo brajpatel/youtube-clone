@@ -1,7 +1,7 @@
 import "./SignedOutSidebar.css";
+import youtubeLogo from "../../../assets/youtube-logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdHomeFilled } from "react-icons/md";
-import { MdOutlineExplore } from "react-icons/md";
 import { BsCollectionPlay } from "react-icons/bs";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 import { GrHistory } from "react-icons/gr";
@@ -12,13 +12,11 @@ function SignedOutSidebar(props) {
     const { isOpen, toggleSidebar }  = props;
 
     return (
-        <div className={`overlay ${isOpen ? 'show' : ''}`} onClick={toggleSidebar}>
+        <div className={`overlay ${isOpen ? 'show' : ''}`}>
             <nav className={`sidebar ${isOpen ? 'open' : ''}`}>
-                <div className="hamburger-container" onClick={toggleSidebar}>
-                    <RxHamburgerMenu className="burger"/>
-                    <Link to="/">
-                        <img src="" alt="youtube-logo"/>
-                    </Link>
+                <div className="hamburger-container">
+                    <RxHamburgerMenu className="burger" onClick={toggleSidebar}/>
+                    <img className="youtube-logo" src={youtubeLogo} alt="youtube-logo"/>
                 </div>
                 <ul>
                     <Link to="/" className="page-link" onClick={toggleSidebar}>

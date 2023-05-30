@@ -54,6 +54,11 @@
     background: rgb(215, 215, 215);
 }
 
+.youtube-logo {
+    max-width: 160px;
+    cursor: pointer;
+}
+
 .sidebar ul {
     display: flex;
     flex-direction: column;
