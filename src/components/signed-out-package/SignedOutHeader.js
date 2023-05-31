@@ -7,7 +7,7 @@ function SignedOutHeader() {
     return (
         <header>
             <img className="youtube-logo" src={youtubeLogo} alt="youtube-logo"/>
-            <div>
+            <div className="search-box">
                 <input type="text"/>
                 <button><RxMagnifyingGlass/></button>
             </div>
