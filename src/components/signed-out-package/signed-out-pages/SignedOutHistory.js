@@ -1,4 +1,4 @@
-import "../SignedOutPage.css";
+import "./SignedOutPage.css";
 import { GrHistory } from "react-icons/gr";
 import SignInButton from "../SignInButton";
 
@@ -9,7 +9,7 @@ function SignedOutHistory() {
                 <GrHistory className="signed-out-page-icon"/>
                 <p>Keep track of what you watch</p>
                 <p>Watch history isn't viewable when you're signed out.
-                    <a className="" href="https://support.google.com/youtube/answer/95725?hl=en-GB" target="_blank">
+                    <a href="https://support.google.com/youtube/answer/95725?hl=en-GB" target="_blank">
                         Learn more
                     </a>
                 </p>
@@ -18,11 +18,11 @@ function SignedOutHistory() {
             <div className="history-type">
                 <p>History type</p>
                 <div>
-                    <label for="watch-history">Watch history</label>
-                    <input id="watch-history" name="history-type" type="radio" checked/>
+                    <label htmlFor="watch-history">Watch history</label>
+                    <input id="watch-history" name="history-type" type="radio"/>
                 </div>
                 <div>
-                    <label for="community">Community</label>
+                    <label htmlFor="community">Community</label>
                     <input id="community" name="history-type" type="radio"/>
                 </div>
             </div>

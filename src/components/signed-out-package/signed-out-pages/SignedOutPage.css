@@ -5,6 +5,7 @@
     align-items: center;
     margin-top: 15vh;
     gap: 1rem;
+    text-align: center;
 }
 
 .signed-out-page-icon {

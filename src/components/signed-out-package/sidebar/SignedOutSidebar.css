@@ -1,3 +1,12 @@
+.open-sidebar-container {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
@@ -11,6 +20,7 @@
     transition: 0.4s ease;
 }
 
+.open-sidebar-container.show,
 .overlay.show {
     opacity: 1;
     visibility: visible;
