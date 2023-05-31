@@ -12,7 +12,8 @@ function SignedOutSidebar(props) {
     const { isOpen, toggleSidebar }  = props;
 
     return (
-        <div className={`overlay ${isOpen ? 'show' : ''}`}>
+        <div>
+            <div className={`overlay ${isOpen ? 'show' : ''}`} onClick={toggleSidebar}></div>
             <nav className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="hamburger-container">
                     <RxHamburgerMenu className="burger" onClick={toggleSidebar}/>
