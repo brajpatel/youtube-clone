@@ -1,8 +1,15 @@
 header {
+    grid-area: 1 / 2 / 2 / 3;
+    background: white;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 0 1.5rem 0 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 65px;
+    width: calc(100vw - 85px - 1.5rem - 10px);
 }
 
 header button {
@@ -10,7 +17,7 @@ header button {
 }
 
 .youtube-logo {
-    max-height: 30px;
+    max-height: 10px;
 }
 
 .search-box {

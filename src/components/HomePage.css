@@ -1,0 +1,4 @@
+.home-page {
+    grid-area: 2 / 2 / 3 / 3;
+    height: 200vh;
+  }
