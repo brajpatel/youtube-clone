@@ -1,3 +1,4 @@
+import "./SignInButton.css";
 import { FaRegUserCircle } from "react-icons/fa";
 
 function SignInButton() {
