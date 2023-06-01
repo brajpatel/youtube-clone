@@ -21,8 +21,8 @@ function SignedOutHeader() {
             <img className="youtube-logo" src={youtubeLogo} alt="youtube-logo"/>
             <div className="search-box">
                 <input onChange={handleChange} placeholder="Search" value={searchInput} type="text"/>
-                <button><RxMagnifyingGlass/></button>
-                <p className={`clear-search-bar ${searchInput.length ? 'show' : ''}`} onClick={clearSearchBar}><RxCross1/></p>
+                <button className="search-button"><RxMagnifyingGlass/></button>
+                <button className={`clear-search-bar ${searchInput.length ? 'show' : ''}`} onClick={clearSearchBar}><RxCross1/></button>
             </div>
             <SignInButton/>
         </header>

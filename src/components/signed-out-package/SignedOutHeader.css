@@ -34,7 +34,7 @@ header button {
     border-color: rgb(6, 95, 212);;
 }
 
-.search-box button {
+.search-box .search-button {
     width: 100%;
     justify-self: start;
     border-top-right-radius: 50px;
@@ -49,12 +49,14 @@ header button {
     align-items: center;
 }
 
-.search-box button:hover {
+.search-box .search-button:hover {
     background: #ececec;
     box-shadow: 0 0 1px grey;
 }
 
 .clear-search-bar {
+    background: none;
+    border: none;
     position: absolute;
     top: 50%;
     right: 65px;
@@ -62,12 +64,14 @@ header button {
     border-radius: 50px;
     padding: 5px;
     cursor: pointer;
+    outline: none;
     display: none;
     font-size: 1.2rem;
+    z-index: 1;
 }
 
 .clear-search-bar:hover {
-    background: rgb(230,230,230);
+    background: rgb(215,215,215, 0.5);
 }
 
 .clear-search-bar.show {
