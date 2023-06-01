@@ -14,6 +14,7 @@ header button {
 }
 
 .search-box {
+    position: relative;
     height: 50%;
     display: grid;
     grid-template-columns: 1fr 60px;
@@ -51,4 +52,26 @@ header button {
 .search-box button:hover {
     background: #ececec;
     box-shadow: 0 0 1px grey;
+}
+
+.clear-search-bar {
+    position: absolute;
+    top: 50%;
+    right: 65px;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+    font-size: 1.2rem;
+}
+
+.clear-search-bar:hover {
+    background: rgb(230,230,230);
+}
+
+.clear-search-bar.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
