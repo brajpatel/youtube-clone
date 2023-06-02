@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SignedInHeader from "./SignedInHeader";
 import SignedInSidebarSmall from "./sidebar/SignedInSidebarSmall";
 
 function SignedInPackage() {
@@ -10,6 +11,7 @@ function SignedInPackage() {
 
     return (
         <>
+            <SignedInHeader/>
             <SignedInSidebarSmall/>
         </>
     )

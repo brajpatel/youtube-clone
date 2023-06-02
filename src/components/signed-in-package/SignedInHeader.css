@@ -1,4 +1,4 @@
-.signed-out-header {
+.signed-in-header {
     grid-area: 1 / 2 / 2 / 3;
     background: white;
     display: grid;
@@ -12,7 +12,7 @@
     width: calc(100vw - 85px - 1.5rem - 10px);
 }
 
-.signed-out-header .youtube-logo {
+.signed-in-header .youtube-logo {
     max-height: 30px;
     cursor: pointer;
 }
@@ -82,8 +82,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.signed-out-header button {
-    justify-self: end;
 }
