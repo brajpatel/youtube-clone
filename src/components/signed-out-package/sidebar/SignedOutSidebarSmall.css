@@ -49,6 +49,10 @@
   background: rgb(230, 230, 230);
 }
 
+.side-bar-small ul > .page-link li {
+  gap: 0.3rem;
+}
+
 .sidebar-icon {
   font-size: 1.4rem;
 }
