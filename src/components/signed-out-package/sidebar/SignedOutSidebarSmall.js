@@ -1,7 +1,6 @@
 import "./SignedOutSidebarSmall.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdHomeFilled } from "react-icons/md";
-import { MdOutlineExplore } from "react-icons/md";
 import { BsCollectionPlay } from "react-icons/bs";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 import { GrHistory } from "react-icons/gr";

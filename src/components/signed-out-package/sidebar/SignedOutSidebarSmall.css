@@ -50,7 +50,7 @@
 }
 
 .side-bar-small ul > .page-link li {
-  gap: 0.3rem;
+  gap: 0.3import { MdOutlineExplore } from "react-icons/md";rem;
 }
 
 .sidebar-icon {
