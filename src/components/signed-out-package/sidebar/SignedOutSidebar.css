@@ -98,6 +98,17 @@
     font-size: 1.6rem;
 }
 
+.sign-in-prompt-container {
+    width: 100%;
+    border-top: 1px solid rgb(215, 215, 215);
+    border-bottom: 1px solid rgb(215, 215, 215);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
 .sign-in-prompt {
     width: 70%;
     display: flex;

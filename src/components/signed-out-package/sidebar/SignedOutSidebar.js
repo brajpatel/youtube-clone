@@ -48,9 +48,11 @@ function SignedOutSidebar(props) {
                             <p>History</p>
                         </li>
                     </Link>
-                    <div className="sign-in-prompt">
-                        <p>Sign in to like videos, comment and subscribe.</p>
-                        <SignInButton/>
+                    <div className="sign-in-prompt-container">
+                        <div className="sign-in-prompt">
+                            <p>Sign in to like videos, comment and subscribe.</p>
+                            <SignInButton/>
+                        </div>
                     </div>
                     <Link to="/" className="page-link" onClick={toggleSidebar}>
                         <li>
@@ -66,7 +68,7 @@ function SignedOutSidebar(props) {
                         </li>
                     </Link>
                     <Link to="/" className="page-link" onClick={toggleSidebar}>
-                            <li>
+                        <li>
                             <AiOutlineQuestionCircle className="sidebar-icon"/>
                             <p>Help</p>
                         </li>
