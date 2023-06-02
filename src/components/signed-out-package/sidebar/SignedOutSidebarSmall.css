@@ -50,7 +50,7 @@
 }
 
 .side-bar-small ul > .page-link li {
-  gap: 0.3
+  gap: 0.3rem;
 }
 
 .sidebar-icon {
@@ -61,4 +61,3 @@
   font-size: 0.75rem;
   text-align: center;
 }
-

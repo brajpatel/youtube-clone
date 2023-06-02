@@ -10,9 +10,7 @@ function SignedInPackage() {
 
     return (
         <>
-            <Sig/>
-            <SignedOutSidebarSmall toggleSidebar={toggleSidebar}/>
-            <SignedOutSidebar isOpen={isOpen} toggleSidebar={toggleSidebar}/>
+            <SignedInSidebarSmall/>
         </>
     )
 }
