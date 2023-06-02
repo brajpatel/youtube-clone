@@ -49,6 +49,7 @@
     grid-template-columns: 80px 1fr;
     justify-items: center;
     align-items: center;
+    position: relative;
 }
 
 .burger {
@@ -64,7 +65,7 @@
     background: rgb(215, 215, 215);
 }
 
-.youtube-logo {
+.sidebar .hamburger-container > .youtube-logo {
     max-height: 30px;
     cursor: pointer;
 }

@@ -16,8 +16,9 @@ header button {
     justify-self: end;
 }
 
-.youtube-logo {
-    height: 45%;
+header .youtube-logo {
+    max-height: 30px;
+    cursor: pointer;
 }
 
 .search-box {
