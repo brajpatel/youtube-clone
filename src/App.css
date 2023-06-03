@@ -25,7 +25,6 @@
 }
 
 .app {
-  position: relative;
   display: grid;
   grid-template: 65px calc(100vh - 65px) / 85px 1fr;
   min-height: 100vh;
