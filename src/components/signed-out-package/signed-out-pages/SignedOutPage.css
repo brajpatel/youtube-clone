@@ -13,11 +13,11 @@
 }
 
 .signed-out-page p:nth-child(2) {
-    font-size: 2.2rem;
+    font-size: 1.85rem;
 }
 
 .signed-out-page p:nth-child(3) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .signed-out-history {
