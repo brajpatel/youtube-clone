@@ -23,7 +23,7 @@
 .signed-out-history {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid-template: 1fr / 3fr 1fr;
+    grid-template: 1fr / 2.2fr 1fr;
 }
 
 .signed-out-history .signed-out-page {
