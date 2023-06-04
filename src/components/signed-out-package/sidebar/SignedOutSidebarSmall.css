@@ -44,11 +44,15 @@
 }
 
 .small-page-link:hover {
-  background: rgb(230, 230, 230);
+  background: rgb(240, 240, 240);
 }
 
 .small-page-link.active {
-  background: rgb(230, 230, 230);
+  background: rgb(240, 240, 240);
+}
+
+.small-page-link.active:hover {
+  background: rgb(225, 225, 225);
 }
 
 .small-page-link li {

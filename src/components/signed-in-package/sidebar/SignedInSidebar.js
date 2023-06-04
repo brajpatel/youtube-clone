@@ -24,48 +24,56 @@ function SignedInSidebar(props) {
                     <img className="youtube-logo" src={youtubeLogo} alt="youtube-logo"/>
                 </div>
 
-                <ul>
-                    <Link
-                    to="/"
-                    onClick={toggleSidebar}
-                    >
-                        <li>
-                            <MdHomeFilled className="sidebar-icon"/>
-                            <p>Home</p>
+                <div className="sidebar-inner">
+                    <ul>
+                        <Link
+                        to="/"
+                        className="page-link"
+                        onClick={toggleSidebar}
+                        >
+                            <li>
+                                <MdHomeFilled className="sidebar-icon"/>
+                                <p>Home</p>
+                            </li>
+                        </Link>
+
+                        <li onClick={toggleSidebar}>
+                            <BsCollectionPlay className="sidebar-icon"/>
+                            <p>Subscriptions</p>
                         </li>
-                    </Link>
+                    </ul>
+                    <ul>
+                        <li onClick={toggleSidebar}>
+                            <MdOutlineVideoLibrary className="sidebar-icon"/>
+                            <p>Library</p>
+                        </li>
 
-                    <li onClick={toggleSidebar}>
-                        <BsCollectionPlay className="sidebar-icon"/>
-                        <p>Subscriptions</p>
-                    </li>
-                    <li onClick={toggleSidebar}>
-                        <MdOutlineVideoLibrary className="sidebar-icon"/>
-                        <p>Library</p>
-                    </li>
-                    <li onClick={toggleSidebar}>
-                        <GrHistory className="sidebar-icon"/>
-                        <p>History</p>
-                    </li>
+                        <li onClick={toggleSidebar}>
+                            <GrHistory className="sidebar-icon"/>
+                            <p>History</p>
+                        </li>
 
-                    <li onClick={toggleSidebar}>
-                        <BiCog className="sidebar-icon"/>
-                        <p>Settings</p>
-                    </li>   
+                        <li onClick={toggleSidebar}>
+                            <BiCog className="sidebar-icon"/>
+                            <p>Settings</p>
+                        </li>   
 
-                    <li onClick={toggleSidebar}>
-                        <MdOutlineOutlinedFlag className="sidebar-icon"/>
-                        <p>Report history</p>
-                    </li>
-                    <li onClick={toggleSidebar}>
-                        <AiOutlineQuestionCircle className="sidebar-icon"/>
-                        <p>Help</p>
-                    </li>
-                    <li onClick={toggleSidebar}>
-                        <BiMessageError className="sidebar-icon"/>
-                        <p>Send feedback</p>
-                    </li>
-                </ul>
+                        <li onClick={toggleSidebar}>
+                            <MdOutlineOutlinedFlag className="sidebar-icon"/>
+                            <p>Report history</p>
+                        </li>
+
+                        <li onClick={toggleSidebar}>
+                            <AiOutlineQuestionCircle className="sidebar-icon"/>
+                            <p>Help</p>
+                        </li>
+
+                        <li onClick={toggleSidebar}>
+                            <BiMessageError className="sidebar-icon"/>
+                            <p>Send feedback</p>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     )

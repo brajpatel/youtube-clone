@@ -73,29 +73,32 @@
     cursor: pointer;
 }
 
+.sidebar .sidebar-inner,
 .sidebar ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
 }
 
-.sidebar ul > .page-link {
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul > .page-link,
+.sidebar ul > li {
     width: 80%;
     border-radius: 8px;
     color: black;
     padding: 0.6rem 0.8rem;
+    cursor: pointer;
 }
 
-.sidebar ul > .page-link:hover {
-    background: rgb(230, 230, 230);
+.sidebar ul > .page-link:hover,
+.sidebar ul > li:hover {
+    background: rgb(240, 240, 240);
 }
 
-.sidebar ul > .page-link.active {
-    background: rgb(230, 230, 230);
-}
-
-.sidebar ul > .page-link li {
+.sidebar ul > .page-link li,
+.sidebar ul > li {
     display: grid;
     grid-template-columns: 40px 1fr;
     align-items: center;
