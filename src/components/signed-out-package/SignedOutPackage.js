@@ -14,8 +14,19 @@ function SignedOutPackage() {
     return (
         <>
             <SignedOutHeader/>
-            <SignedOutSidebarSmall toggleSidebar={toggleSidebar} activeTab={activeTab} setActiveTab={setActiveTab}/>
-            <SignedOutSidebar isOpen={isOpen} toggleSidebar={toggleSidebar} activeTab={activeTab} setActiveTab={setActiveTab}/>
+
+            <SignedOutSidebarSmall
+            toggleSidebar={toggleSidebar}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+            />
+
+            <SignedOutSidebar
+            isOpen={isOpen}
+            toggleSidebar={toggleSidebar}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+            />
         </>
     )
 }

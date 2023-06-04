@@ -1,4 +1,4 @@
-import "./SignedOutSidebar.css";
+import "./SignedInSidebar.css";
 import { Link } from "react-router-dom";
 import youtubeLogo from "../../../assets/youtube-logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -27,8 +27,7 @@ function SignedInSidebar(props) {
                 <ul>
                     <Link
                     to="/"
-                    className={`page-link ${activeTab === 'home' ? 'active' : ''}`}
-                    onClick={() => { toggleSidebar(); setActiveTab('home') }}
+                    onClick={toggleSidebar}
                     >
                         <li>
                             <MdHomeFilled className="sidebar-icon"/>
@@ -36,63 +35,36 @@ function SignedInSidebar(props) {
                         </li>
                     </Link>
 
-                    <Link
-                    to="/subscriptions"
-                    className={`page-link ${activeTab === 'subscriptions' ? 'active' : ''}`}
-                    onClick={() => { toggleSidebar(); setActiveTab('subscriptions') }}
-                    >
-                        <li>
-                            <BsCollectionPlay className="sidebar-icon"/>
-                            <p>Subscriptions</p>
-                        </li>
-                    </Link>
+                    <li onClick={toggleSidebar}>
+                        <BsCollectionPlay className="sidebar-icon"/>
+                        <p>Subscriptions</p>
+                    </li>
+                    <li onClick={toggleSidebar}>
+                        <MdOutlineVideoLibrary className="sidebar-icon"/>
+                        <p>Library</p>
+                    </li>
+                    <li onClick={toggleSidebar}>
+                        <GrHistory className="sidebar-icon"/>
+                        <p>History</p>
+                    </li>
 
-                    <Link
-                    to="/library"
-                    className={`page-link ${activeTab === 'library' ? 'active' : ''}`}
-                    onClick={() => { toggleSidebar(); setActiveTab('library') }}
-                    >
-                        <li>
-                            <MdOutlineVideoLibrary className="sidebar-icon"/>
-                            <p>Library</p>
-                        </li>
-                    </Link>
-                    <Link
-                    to="/history"
-                    className={`page-link ${activeTab === 'history' ? 'active' : ''}`}
-                    onClick={() => { toggleSidebar(); setActiveTab('history') }}
-                    >
-                        <li>
-                            <GrHistory className="sidebar-icon"/>
-                            <p>History</p>
-                        </li>
-                    </Link>
+                    <li onClick={toggleSidebar}>
+                        <BiCog className="sidebar-icon"/>
+                        <p>Settings</p>
+                    </li>   
 
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
-                        <li>
-                            <BiCog className="sidebar-icon"/>
-                            <p>Settings</p>
-                        </li>   
-                    </Link>
-
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
-                        <li>
-                            <MdOutlineOutlinedFlag className="sidebar-icon"/>
-                            <p>Report history</p>
-                        </li>
-                    </Link>
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
-                        <li>
-                            <AiOutlineQuestionCircle className="sidebar-icon"/>
-                            <p>Help</p>
-                        </li>
-                    </Link>
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
-                        <li>
-                            <BiMessageError className="sidebar-icon"/>
-                            <p>Send feedback</p>
-                        </li>
-                    </Link>
+                    <li onClick={toggleSidebar}>
+                        <MdOutlineOutlinedFlag className="sidebar-icon"/>
+                        <p>Report history</p>
+                    </li>
+                    <li onClick={toggleSidebar}>
+                        <AiOutlineQuestionCircle className="sidebar-icon"/>
+                        <p>Help</p>
+                    </li>
+                    <li onClick={toggleSidebar}>
+                        <BiMessageError className="sidebar-icon"/>
+                        <p>Send feedback</p>
+                    </li>
                 </ul>
             </nav>
         </div>
