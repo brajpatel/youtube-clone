@@ -1,5 +1,4 @@
 import "./SignedOutSidebarSmall.css";
-import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdHomeFilled } from "react-icons/md";
 import { BsCollectionPlay } from "react-icons/bs";
@@ -8,9 +7,7 @@ import { GrHistory } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
 function SignedOutSidebarSmall(props) {
-    const { toggleSidebar } = props;
-
-    const [activeTab, setActiveTab] = useState('home');
+    const { toggleSidebar, activeTab, setActiveTab } = props;
 
     return (
         <nav className="sidebar-small">

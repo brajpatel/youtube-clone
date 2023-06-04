@@ -5,6 +5,7 @@ import SignedOutSidebarSmall from "./sidebar/SignedOutSidebarSmall";
 
 function SignedOutPackage() {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeTab, setActiveTab] = useState('home');
 
     const toggleSidebar = () => {
         setIsOpen(!isOpen);
@@ -13,8 +14,8 @@ function SignedOutPackage() {
     return (
         <>
             <SignedOutHeader/>
-            <SignedOutSidebarSmall toggleSidebar={toggleSidebar}/>
-            <SignedOutSidebar isOpen={isOpen} toggleSidebar={toggleSidebar}/>
+            <SignedOutSidebarSmall toggleSidebar={toggleSidebar} activeTab={activeTab} setActiveTab={setActiveTab}/>
+            <SignedOutSidebar isOpen={isOpen} toggleSidebar={toggleSidebar} activeTab={activeTab} setActiveTab={setActiveTab}/>
         </>
     )
 }
