@@ -40,6 +40,7 @@
     position: absolute;
     top: 0;
     left: -100%;
+    overflow: auto;
     transition: 0.4s ease;
 }
 
@@ -65,7 +66,7 @@
 }
 
 .burger:hover {
-    background: rgb(215, 215, 215);
+    background: rgb(230, 230, 230);
 }
 
 .sidebar .hamburger-container > .youtube-logo {
@@ -81,6 +82,12 @@
 
 .sidebar ul {
     list-style-type: none;
+}
+
+.sidebar ul:nth-child(2) {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgb(215, 215, 215);
 }
 
 .sidebar ul > .page-link,

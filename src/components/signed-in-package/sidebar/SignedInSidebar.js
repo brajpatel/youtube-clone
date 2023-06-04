@@ -73,6 +73,7 @@ function SignedInSidebar(props) {
                             <p>Send feedback</p>
                         </li>
                     </ul>
+                    
                 </div>
             </nav>
         </div>

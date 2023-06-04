@@ -9,7 +9,7 @@ import SignedInPackage from './components/signed-in-package/SignedInPackage';
 import HomePage from './components/HomePage';
 
 function App() {
-  const [signedIn, setSignedIn] = useState(false);
+  const [signedIn, setSignedIn] = useState(true);
 
   return (
     <div className="app">
