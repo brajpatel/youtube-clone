@@ -75,26 +75,45 @@ function SignedOutSidebar(props) {
                             <SignInButton/>
                         </div>
                     </div>
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
+
+                    <Link
+                    to="/"
+                    className="page-link"
+                    onClick={() => { toggleSidebar(); setActiveTab('home') }}
+                    >
                         <li>
                             <BiCog className="sidebar-icon"/>
                             <p>Settings</p>
                         </li>   
                     </Link>
 
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
+                    <Link
+                    to="/"
+                    className="page-link"
+                    onClick={() => { toggleSidebar(); setActiveTab('home') }}
+                    >
                         <li>
                             <MdOutlineOutlinedFlag className="sidebar-icon"/>
                             <p>Report history</p>
                         </li>
                     </Link>
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
+
+                    <Link
+                    to="/"
+                    className="page-link"
+                    onClick={() => { toggleSidebar(); setActiveTab('home') }}
+                    >
                         <li>
                             <AiOutlineQuestionCircle className="sidebar-icon"/>
                             <p>Help</p>
                         </li>
                     </Link>
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
+                    
+                    <Link
+                    to="/"
+                    className="page-link"
+                    onClick={() => { toggleSidebar(); setActiveTab('home') }}
+                    >
                         <li>
                             <BiMessageError className="sidebar-icon"/>
                             <p>Send feedback</p>
