@@ -11,8 +11,8 @@ function SignedOutSidebarSmall(props) {
 
     return (
         <nav className="sidebar-small">
-            <div className="hamburger-container" onClick={toggleSidebar}>
-                <RxHamburgerMenu className="burger"/>
+            <div className="hamburger-container">
+                <RxHamburgerMenu className="burger" onClick={toggleSidebar}/>
             </div>
             <ul>
                 <Link
