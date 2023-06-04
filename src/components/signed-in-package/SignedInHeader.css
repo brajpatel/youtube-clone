@@ -1,15 +1,16 @@
 .signed-in-header {
     grid-area: 1 / 2 / 2 / 3;
+    height: 65px;
+    width: calc(100vw - 85px - 1.5rem - 10px);
     background: white;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 0 1.5rem 0 0;
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
-    height: 65px;
-    width: calc(100vw - 85px - 1.5rem - 10px);
+    z-index: 1;
 }
 
 .signed-in-header .youtube-logo {

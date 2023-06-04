@@ -7,13 +7,6 @@ function SignedOutPackage() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleSidebar = () => {
-        if(!isOpen) {
-            document.body.style.overflowY = 'hidden';
-        }
-        else {
-            document.body.style.overflowY = 'auto';
-        }
-
         setIsOpen(!isOpen);
     }
 

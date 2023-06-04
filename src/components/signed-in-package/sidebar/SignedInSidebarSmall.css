@@ -1,63 +1,61 @@
 .side-bar-small {
-    grid-area: 1 / 1 / 3 / 2;
-    background: white;
-    display: grid;
-    grid-template-rows: 65px 1fr;
-    gap: 1rem;
-    position: fixed;
-    width: 85px;
-  }
-  
-  .side-bar-small .hamburger-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .burger {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 0.4rem;
-    transition: 0.1s ease;
-  }
-  
-  .burger:hover {
-    background: rgb(215, 215, 215);
-  }
-  
-  .side-bar-small ul,
-  .side-bar-small ul > .page-link li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .side-bar-small ul {
-    list-style-type: none;
-  }
-  
-  .side-bar-small ul > .page-link {
-    color: black;
-    width: 90%;
-    border-radius: 8px;
-    padding: 1.5rem 0;
-  }
-  
-  .side-bar-small ul > .page-link:hover {
-    background: rgb(230, 230, 230);
-  }
-  
-  .side-bar-small ul > .page-link li {
-    gap: 0.3rem;
-  }
-  
-  .sidebar-icon {
-    font-size: 1.4rem;
-  }
-  
-  .side-bar-small ul > .page-link li > p {
-    font-size: 0.75rem;
-    text-align: center;
-  }
+  grid-area: 1 / 1 / 3 / 2;
+  background: white;
+  display: grid;
+  grid-template-rows: 65px 1fr;
+  gap: 1rem;
+}
+
+.side-bar-small .hamburger-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.4rem;
+  transition: 0.1s ease;
+}
+
+.burger:hover {
+  background: rgb(215, 215, 215);
+}
+
+.side-bar-small ul,
+.side-bar-small ul>.page-link li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-bar-small ul {
+  list-style-type: none;
+}
+
+.side-bar-small ul>.page-link {
+  color: black;
+  width: 90%;
+  border-radius: 8px;
+  padding: 1.5rem 0;
+}
+
+.side-bar-small ul>.page-link:hover {
+  background: rgb(230, 230, 230);
+}
+
+.side-bar-small ul>.page-link li {
+  gap: 0.3rem;
+}
+
+.sidebar-icon {
+  font-size: 1.4rem;
+}
+
+.side-bar-small ul>.page-link li>p {
+  font-size: 0.75rem;
+  text-align: center;
+}
