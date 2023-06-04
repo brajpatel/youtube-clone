@@ -24,7 +24,7 @@ function SignedOutSidebar(props) {
                     <img className="youtube-logo" src={youtubeLogo} alt="youtube-logo"/>
                 </div>
                 <ul>
-                    <Link to="/" className="page-link" onClick={toggleSidebar}>
+                    <Link to="/" className="page-link active" onClick={toggleSidebar}>
                         <li>
                             <MdHomeFilled className="sidebar-icon"/>
                             <p>Home</p>

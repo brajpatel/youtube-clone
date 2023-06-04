@@ -91,6 +91,10 @@
     background: rgb(230, 230, 230);
 }
 
+.sidebar ul > .page-link.active {
+    background: rgb(230, 230, 230);
+}
+
 .sidebar ul > .page-link li {
     display: grid;
     grid-template-columns: 40px 1fr;
