@@ -7,6 +7,7 @@ import { BsCollectionPlay } from "react-icons/bs";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 import { GrHistory } from "react-icons/gr";
 import SignInButton from "../SignInButton";
+import Explore from "../Explore";
 import Support from "../Support";
 
 function SignedOutSidebar(props) {
@@ -73,6 +74,8 @@ function SignedOutSidebar(props) {
                             <SignInButton/>
                         </div>
                     </div>
+
+                    <Explore/>
 
                     <Support/>
 
