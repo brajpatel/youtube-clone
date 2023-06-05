@@ -1,11 +1,17 @@
 import { HiOutlineFire } from "react-icons/hi";
 import { TfiMusicAlt } from "react-icons/tfi";
 import { MdOutlineMovie } from "react-icons/md";
+import { GiAerialSignal } from "react-icons/gi";
+import { SiYoutubegaming } from "react-icons/si";
+import { BsNewspaper } from "react-icons/bs";
+import { BsTrophy } from "react-icons/bs";
+import { GoLightBulb } from "react-icons/go";
+import { TbHanger2 } from "react-icons/tb";
 
 function Explore() {
     return (
         <ul>
-            <p>Explore</p>
+            <p className="explore">Explore</p>
             <li>
                 <HiOutlineFire className="sidebar-icon"/>
                 <p>Trending</p>
@@ -19,27 +25,27 @@ function Explore() {
                 <p>Movies & TV</p>
             </li>
             <li>
-                <HiOutlineFire className="sidebar-icon"/>
+                <GiAerialSignal className="sidebar-icon"/>
                 <p>Live</p>
             </li>
             <li>
-                <HiOutlineFire className="sidebar-icon"/>
+                <SiYoutubegaming className="sidebar-icon"/>
                 <p>Gaming</p>
             </li>
             <li>
-                <HiOutlineFire className="sidebar-icon"/>
+                <BsNewspaper className="sidebar-icon"/>
                 <p>News</p>
             </li>
             <li>
-                <HiOutlineFire className="sidebar-icon"/>
+                <BsTrophy className="sidebar-icon"/>
                 <p>Sport</p>
             </li>
             <li>
-                <HiOutlineFire className="sidebar-icon"/>
+                <GoLightBulb className="sidebar-icon"/>
                 <p>Learning</p>
             </li>
             <li>
-                <HiOutlineFire className="sidebar-icon"/>
+                <TbHanger2 className="sidebar-icon"/>
                 <p>Fashion & beauty</p>
             </li>
         </ul>
