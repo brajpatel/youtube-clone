@@ -6,6 +6,9 @@ import { MdHomeFilled } from "react-icons/md";
 import { BsCollectionPlay } from "react-icons/bs";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 import { GrHistory } from "react-icons/gr";
+import { GoVideo } from "react-icons/go";
+import { BiTimeFive } from "react-icons/bi";
+import { FiThumbsUp } from "react-icons/fi";
 import { BiCog } from "react-icons/bi";
 import { MdOutlineOutlinedFlag } from "react-icons/md";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
@@ -38,7 +41,7 @@ function SignedInSidebar(props) {
                             </li>
                         </Link>
 
-                        <li onClick={toggleSidebar}>
+                        <li>
                             <BsCollectionPlay className="sidebar-icon"/>
                             <p>Subscriptions</p>
                         </li>
@@ -53,7 +56,21 @@ function SignedInSidebar(props) {
                             <GrHistory className="sidebar-icon"/>
                             <p>History</p>
                         </li>
-
+                        <li>
+                            <GoVideo className="sidebar-icon"/>
+                            <p>Your videos</p>
+                        </li>
+                        <li>
+                            <BiTimeFive className="sidebar-icon"/>
+                            <p>Watch later</p>
+                        </li>
+                        <li>
+                            <FiThumbsUp className="sidebar-icon"/>
+                            <p>Liked videos</p>
+                        </li>
+                    </ul>
+                    <Explore/>
+                    <ul>
                         <li>
                             <BiCog className="sidebar-icon"/>
                             <p>Settings</p>
@@ -68,15 +85,10 @@ function SignedInSidebar(props) {
                             <AiOutlineQuestionCircle className="sidebar-icon"/>
                             <p>Help</p>
                         </li>
-
                         <li>
                             <BiMessageError className="sidebar-icon"/>
                             <p>Send feedback</p>
                         </li>
-                    </ul>
-                    <Explore/>
-                    <ul>
-                        Other stuff
                     </ul>
                 </div>
             </nav>
