@@ -9,11 +9,8 @@ import { GrHistory } from "react-icons/gr";
 import { GoVideo } from "react-icons/go";
 import { BiTimeFive } from "react-icons/bi";
 import { FiThumbsUp } from "react-icons/fi";
-import { BiCog } from "react-icons/bi";
-import { MdOutlineOutlinedFlag } from "react-icons/md";
-import { AiOutlineQuestionCircle } from "react-icons/ai";
-import { BiMessageError } from "react-icons/bi";
 import Explore from "../../signed-out-package/Explore";
+import Support from "../../signed-out-package/Support";
 
 function SignedInSidebar(props) {
     const { isOpen, toggleSidebar }  = props;
@@ -71,24 +68,7 @@ function SignedInSidebar(props) {
                     </ul>
                     <Explore/>
                     <ul>
-                        <li>
-                            <BiCog className="sidebar-icon"/>
-                            <p>Settings</p>
-                        </li>   
-
-                        <li>
-                            <MdOutlineOutlinedFlag className="sidebar-icon"/>
-                            <p>Report history</p>
-                        </li>
-
-                        <li>
-                            <AiOutlineQuestionCircle className="sidebar-icon"/>
-                            <p>Help</p>
-                        </li>
-                        <li>
-                            <BiMessageError className="sidebar-icon"/>
-                            <p>Send feedback</p>
-                        </li>
+                        <Support/>
                     </ul>
                 </div>
             </nav>
