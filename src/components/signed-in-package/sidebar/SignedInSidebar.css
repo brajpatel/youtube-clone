@@ -84,7 +84,9 @@
     list-style-type: none;
 }
 
-.sidebar ul:nth-child(2) {
+.sidebar ul:nth-child(2),
+.sidebar ul:nth-child(3),
+.sidebar ul:nth-child(4) {
     margin-top: 0.5rem;
     padding-top: 0.5rem;
     border-top: 1px solid rgb(215, 215, 215);

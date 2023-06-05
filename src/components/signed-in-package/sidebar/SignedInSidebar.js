@@ -10,6 +10,7 @@ import { BiCog } from "react-icons/bi";
 import { MdOutlineOutlinedFlag } from "react-icons/md";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { BiMessageError } from "react-icons/bi";
+import Explore from "../../signed-out-package/Explore";
 
 function SignedInSidebar(props) {
     const { isOpen, toggleSidebar }  = props;
@@ -43,39 +44,37 @@ function SignedInSidebar(props) {
                         </li>
                     </ul>
                     <ul>
-                        <li onClick={toggleSidebar}>
+                        <li>
                             <MdOutlineVideoLibrary className="sidebar-icon"/>
                             <p>Library</p>
                         </li>
 
-                        <li onClick={toggleSidebar}>
+                        <li>
                             <GrHistory className="sidebar-icon"/>
                             <p>History</p>
                         </li>
 
-                        <li onClick={toggleSidebar}>
+                        <li>
                             <BiCog className="sidebar-icon"/>
                             <p>Settings</p>
                         </li>   
 
-                        <li onClick={toggleSidebar}>
+                        <li>
                             <MdOutlineOutlinedFlag className="sidebar-icon"/>
                             <p>Report history</p>
                         </li>
 
-                        <li onClick={toggleSidebar}>
+                        <li>
                             <AiOutlineQuestionCircle className="sidebar-icon"/>
                             <p>Help</p>
                         </li>
 
-                        <li onClick={toggleSidebar}>
+                        <li>
                             <BiMessageError className="sidebar-icon"/>
                             <p>Send feedback</p>
                         </li>
                     </ul>
-                    <ul>
-                        Explore
-                    </ul>
+                    <Explore/>
                     <ul>
                         Other stuff
                     </ul>

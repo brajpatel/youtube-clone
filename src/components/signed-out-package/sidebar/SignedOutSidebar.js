@@ -58,6 +58,7 @@ function SignedOutSidebar(props) {
                             <p>Library</p>
                         </li>
                     </Link>
+                    
                     <Link
                     to="/history"
                     className={`page-link ${activeTab === 'history' ? 'active' : ''}`}
