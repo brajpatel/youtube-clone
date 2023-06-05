@@ -6,7 +6,7 @@ import { MdHomeFilled } from "react-icons/md";
 import { BsCollectionPlay } from "react-icons/bs";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 import { GrHistory } from "react-icons/gr";
-import { GoVideo } from "react-icons/go";
+import { RiVideoLine } from "react-icons/ri";
 import { BiTimeFive } from "react-icons/bi";
 import { FiThumbsUp } from "react-icons/fi";
 import Explore from "../../signed-out-package/Explore";
@@ -54,7 +54,7 @@ function SignedInSidebar(props) {
                             <p>History</p>
                         </li>
                         <li>
-                            <GoVideo className="sidebar-icon"/>
+                            <RiVideoLine className="sidebar-icon"/>
                             <p>Your videos</p>
                         </li>
                         <li>
@@ -66,7 +66,9 @@ function SignedInSidebar(props) {
                             <p>Liked videos</p>
                         </li>
                     </ul>
+
                     <Explore/>
+                    
                     <ul>
                         <Support/>
                     </ul>

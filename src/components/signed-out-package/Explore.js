@@ -5,7 +5,7 @@ import { GiAerialSignal } from "react-icons/gi";
 import { SiYoutubegaming } from "react-icons/si";
 import { BsNewspaper } from "react-icons/bs";
 import { BsTrophy } from "react-icons/bs";
-import { GoLightBulb } from "react-icons/go";
+import { AiOutlineBulb } from "react-icons/ai";
 import { TbHanger2 } from "react-icons/tb";
 
 function Explore() {
@@ -41,7 +41,7 @@ function Explore() {
                 <p>Sport</p>
             </li>
             <li>
-                <GoLightBulb className="sidebar-icon"/>
+                <AiOutlineBulb className="sidebar-icon"/>
                 <p>Learning</p>
             </li>
             <li>
