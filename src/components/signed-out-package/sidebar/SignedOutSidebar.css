@@ -86,7 +86,8 @@
     padding: 0.6rem 0.8rem;
 }
 
-.sidebar ul > .page-link:hover {
+.sidebar ul > .page-link:hover,
+.sidebar ul > li:hover {
     background: rgb(240, 240, 240);
 }
 
@@ -98,7 +99,8 @@
     background: rgb(225, 225, 225);
 }
 
-.sidebar ul > .page-link li {
+.sidebar ul > .page-link li,
+.sidebar ul > li {
     display: grid;
     grid-template-columns: 40px 1fr;
     align-items: center;
