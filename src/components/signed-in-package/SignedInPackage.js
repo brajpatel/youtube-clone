@@ -13,7 +13,16 @@ function SignedInPackage() {
     return (
         <>
             <SignedInHeader/>
-            <SignedInSidebar isOpen={isOpen}/>
+
+            <SignedInSidebarSmall
+            isOpen={isOpen}
+            toggleSidebar={toggleSidebar}
+            />
+
+            <SignedInSidebar
+            isOpen={isOpen}
+            toggleSidebar={toggleSidebar}
+            />
         </>
     )
 }
