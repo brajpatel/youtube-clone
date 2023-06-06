@@ -14,24 +14,22 @@ function SignedInSidebarSmall(props) {
                 <RxHamburgerMenu className="burger"/>
             </div>
             <ul>
-                <Link to="/" className="page-link">
+                <Link to="/" className="small-page-link">
                     <li>
                         <MdHomeFilled className="sidebar-icon"/>
                         <p>Home</p>
                     </li>
                 </Link>
-                <Link to="#" className="page-link">
-                    <li>
-                        <BsCollectionPlay className="sidebar-icon"/>
-                        <p>Subscriptions</p>
-                    </li>
-                </Link>
-                <Link to="#" className="page-link">
-                    <li>
-                        <MdOutlineVideoLibrary className="sidebar-icon"/>
-                        <p>Library</p>
-                    </li>
-                </Link>
+            
+                <li>
+                    <BsCollectionPlay className="sidebar-icon"/>
+                    <p>Subscriptions</p>
+                </li>
+
+                <li>
+                    <MdOutlineVideoLibrary className="sidebar-icon"/>
+                    <p>Library</p>
+                </li>
             </ul>
         </nav>
     )

@@ -92,8 +92,8 @@
     border-top: 1px solid rgb(215, 215, 215);
 }
 
-.sidebar ul :nth-child(4) {
-    padding-bottom: 1rem;
+.sidebar ul:nth-child(4) {
+    margin-bottom: 1rem;
 }
 
 .sidebar ul > .page-link,
