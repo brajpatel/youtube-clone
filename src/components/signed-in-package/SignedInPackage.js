@@ -4,7 +4,7 @@ import SignedInSidebarSmall from "./sidebar/SignedInSidebarSmall";
 import SignedInSidebar from "./sidebar/SignedInSidebar";
 
 function SignedInPackage() {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggleSidebar = () => {
         setIsOpen(!isOpen);
