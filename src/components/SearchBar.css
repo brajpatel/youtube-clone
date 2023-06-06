@@ -1,6 +1,7 @@
 .search-box {
     position: relative;
     height: 40px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 60px;
 }

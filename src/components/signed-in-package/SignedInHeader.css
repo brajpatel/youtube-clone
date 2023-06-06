@@ -19,15 +19,33 @@
 }
 
 .header-middle {
+    width: 100%;
     display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.header-middle .header-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.header-middle .header-icon:hover {
+    background: rgb(230, 230, 230);
 }
 
 .header-end {
     height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     gap: 0.8rem;
+}
+
+.header-end .header-icon {
+    font-size: 2rem;
 }
 
 .header-end div {
@@ -36,7 +54,9 @@
     border-radius: 50px;
     height: 40px;
     width: 40px;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
