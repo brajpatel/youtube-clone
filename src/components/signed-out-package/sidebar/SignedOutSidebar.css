@@ -106,8 +106,9 @@
     align-items: center;
 }
 
-.sidebar-icon {
-    font-size: 1.6rem;
+.sidebar ul > .page-link > li > .sidebar-icon,
+.sidebar ul > li > .sidebar-icon {
+    font-size: 1.5rem;
 }
 
 .sign-in-prompt-container {
