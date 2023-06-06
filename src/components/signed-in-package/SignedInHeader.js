@@ -11,12 +11,18 @@ function SignedInHeader() {
             <img className="youtube-logo" src={youtubeLogo} alt="youtube-logo"/>
             <div className="header-middle">
                 <SearchBar/>
-                <FaMicrophone className="header-icon"/>
+                <div className="header-icon">
+                    <FaMicrophone/>
+                </div>
             </div>
             <div className="header-end">
-                <AiOutlinePlusSquare className="header-icon"/>
-                <BsBell className="header-icon"/>
-                <div>
+                <div className="header-icon">
+                    <AiOutlinePlusSquare/>
+                </div>
+                <div className="header-icon">
+                    <BsBell/>
+                </div>
+                <div className="profile-pic">
                     B
                 </div>
             </div>
