@@ -51,8 +51,8 @@
   gap: 0.3rem;
 }
 
-.sidebar-icon {
-  font-size: 1.2rem;
+.small-page-link li > .sidebar-icon {
+  font-size: 1.35rem;
 }
 
 .side-bar-small ul > .page-link li > p {
