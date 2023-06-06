@@ -19,7 +19,7 @@ function SignedOutHistory() {
                 <p>History type</p>
                 <div>
                     <label htmlFor="watch-history">Watch history</label>
-                    <input id="watch-history" name="history-type" type="radio"/>
+                    <input id="watch-history" name="history-type" type="radio" defaultChecked/>
                 </div>
                 <div>
                     <label htmlFor="community">Community</label>
