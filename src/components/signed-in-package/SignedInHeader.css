@@ -17,3 +17,26 @@
     max-height: 22px;
     cursor: pointer;
 }
+
+.header-middle {
+    display: flex;
+}
+
+.header-end {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header-end div {
+    background: rgb(57, 107, 172);
+    color: #eaebea;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
