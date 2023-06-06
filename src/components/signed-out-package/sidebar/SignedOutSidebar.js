@@ -77,8 +77,9 @@ function SignedOutSidebar(props) {
 
                     <Explore/>
 
-                    <Support/>
-
+                    <ul>
+                        <Support/>
+                    </ul>
                 </ul>
             </nav>
         </div>
