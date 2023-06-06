@@ -67,8 +67,10 @@ function SignedInSidebar(props) {
                         </li>
                     </ul>
 
-                    <Explore/>
-                    
+                    <ul>
+                        <Explore/>
+                    </ul>
+
                     <ul>
                         <Support/>
                     </ul>

@@ -10,7 +10,7 @@ import { TbHanger2 } from "react-icons/tb";
 
 function Explore() {
     return (
-        <ul>
+        <>
             <p className="explore">Explore</p>
             <li>
                 <HiOutlineFire className="sidebar-icon"/>
@@ -48,7 +48,7 @@ function Explore() {
                 <TbHanger2 className="sidebar-icon"/>
                 <p>Fashion & beauty</p>
             </li>
-        </ul>
+        </>
     )
 }
 

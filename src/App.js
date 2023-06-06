@@ -9,12 +9,12 @@ import SignedInPackage from './components/signed-in-package/SignedInPackage';
 import HomePage from './components/HomePage';
 
 function App() {
-  const [signedIn, setSignedIn] = useState(true);
+  const [signedIn, setSignedIn] = useState(false);
 
   return (
     <div className="app">
       <BrowserRouter>
-        {signedIn ? <SignedInPackage/> : <SignedOutPackage/>}
+        <SignedOutPackage/>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/subscriptions" element={<SignedOutSubscriptions/>}/>
