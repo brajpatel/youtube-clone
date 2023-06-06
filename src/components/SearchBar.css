@@ -1,6 +1,6 @@
 .search-box {
     position: relative;
-    min-height: 50%;
+    height: 40px;
     display: grid;
     grid-template-columns: 1fr 60px;
 }
