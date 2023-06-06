@@ -26,7 +26,7 @@
 }
 
 .side-bar-small ul,
-.side-bar-small ul>.page-link li {
+.side-bar-small ul > .page-link li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,26 +36,26 @@
   list-style-type: none;
 }
 
-.side-bar-small ul>.page-link {
+.side-bar-small ul > .page-link {
   color: black;
   width: 90%;
   border-radius: 8px;
   padding: 1.5rem 0;
 }
 
-.side-bar-small ul>.page-link:hover {
+.side-bar-small ul > .page-link:hover {
   background: rgb(230, 230, 230);
 }
 
-.side-bar-small ul>.page-link li {
+.side-bar-small ul > .page-link li {
   gap: 0.3rem;
 }
 
 .sidebar-icon {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
-.side-bar-small ul>.page-link li>p {
+.side-bar-small ul > .page-link li > p {
   font-size: 0.75rem;
   text-align: center;
 }
