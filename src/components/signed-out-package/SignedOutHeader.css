@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
-.signed-out-header button {
+.signed-out-header .header-end {
     justify-self: end;
+}
+
+.signed-out-header .header-end > .header-icon {
+    font-size: 1rem;
 }
