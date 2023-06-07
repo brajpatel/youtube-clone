@@ -9,8 +9,8 @@ import { GrHistory } from "react-icons/gr";
 import { RiVideoLine } from "react-icons/ri";
 import { BiTimeFive } from "react-icons/bi";
 import { FiThumbsUp } from "react-icons/fi";
-import Explore from "../../signed-out-package/Explore";
-import Support from "../../signed-out-package/Support";
+import Explore from "../../Explore";
+import Support from "../../Support";
 
 function SignedInSidebar(props) {
     const { isOpen, toggleSidebar }  = props;
@@ -53,7 +53,7 @@ function SignedInSidebar(props) {
                             <GrHistory className="sidebar-icon"/>
                             <p>History</p>
                         </li>
-                        
+
                         <li title="Your videos">
                             <RiVideoLine className="sidebar-icon"/>
                             <p>Your videos</p>
