@@ -9,15 +9,18 @@ function Support() {
             <li title="Settings">
                 <BiCog className="sidebar-icon"/>
                 <p>Settings</p>
-            </li>   
+            </li>
+            
             <li title="Report history">
                 <MdOutlineOutlinedFlag className="sidebar-icon"/>
                 <p>Report history</p>
             </li>
+            
             <li title="Help">
                 <AiOutlineQuestionCircle className="sidebar-icon"/>
                 <p>Help</p>
             </li>
+
             <li title="Send feedback">
                 <BiMessageError className="sidebar-icon"/>
                 <p>Send feedback</p>
