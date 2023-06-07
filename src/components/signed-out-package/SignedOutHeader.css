@@ -22,6 +22,37 @@
     justify-self: end;
 }
 
-.signed-out-header .header-end > .header-icon {
-    font-size: 1rem;
+.header-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.header-icon:hover {
+    background: rgb(230, 230, 230);
+}
+
+.header-icon::after {
+    position: absolute;
+    bottom: -115%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.header-icon.settings::after {
+    content: 'Settings';
+}
+
+.header-icon:hover::after {
+    opacity: 1
+    ;
 }

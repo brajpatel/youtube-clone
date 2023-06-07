@@ -11,7 +11,9 @@ function SignedOutHeader() {
             <img className="youtube-logo" src={youtubeLogo} alt="youtube-logo"/>
             <SearchBar/>
             <div className="header-end">
-                <HiOutlineDotsVertical className="header-icon"/>
+                <div className="header-icon settings">
+                    <HiOutlineDotsVertical/>
+                </div>
                 <SignInButton/>
             </div>
         </header>
