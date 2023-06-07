@@ -32,36 +32,39 @@ function SignedInSidebar(props) {
                         className="page-link"
                         onClick={toggleSidebar}
                         >
-                            <li>
+                            <li title="Home">
                                 <MdHomeFilled className="sidebar-icon"/>
                                 <p>Home</p>
                             </li>
                         </Link>
 
-                        <li>
+                        <li title="Subscriptions">
                             <BsCollectionPlay className="sidebar-icon"/>
                             <p>Subscriptions</p>
                         </li>
                     </ul>
                     <ul>
-                        <li>
+                        <li title="Library">
                             <MdOutlineVideoLibrary className="sidebar-icon"/>
                             <p>Library</p>
                         </li>
 
-                        <li>
+                        <li title="History">
                             <GrHistory className="sidebar-icon"/>
                             <p>History</p>
                         </li>
-                        <li>
+                        
+                        <li title="Your videos">
                             <RiVideoLine className="sidebar-icon"/>
                             <p>Your videos</p>
                         </li>
-                        <li>
+
+                        <li title="Watch Later">
                             <BiTimeFive className="sidebar-icon"/>
-                            <p>Watch later</p>
+                            <p>Watch Later</p>
                         </li>
-                        <li>
+
+                        <li title="Liked videos">
                             <FiThumbsUp className="sidebar-icon"/>
                             <p>Liked videos</p>
                         </li>
