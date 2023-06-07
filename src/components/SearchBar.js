@@ -2,6 +2,7 @@ import "./SearchBar.css";
 import { useState } from "react";
 import { RxMagnifyingGlass } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 function SearchBar() {
     const [searchInput, setSearchInput] = useState('');
@@ -17,7 +18,9 @@ function SearchBar() {
     return (
         <div className="search-box">
             <input onChange={handleChange} placeholder="Search" value={searchInput} type="text"/>
-            <button className="search-button"><RxMagnifyingGlass/></button>
+            <Link to="/" className="search-button">
+                <RxMagnifyingGlass/>
+            </Link>
             <button className={`clear-search-bar ${searchInput.length ? 'show' : ''}`} onClick={clearSearchBar}><RxCross1/></button>
         </div>
     )
