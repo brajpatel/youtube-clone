@@ -29,7 +29,7 @@ function SignedOutSidebar(props) {
                     className={`page-link ${activeTab === 'home' ? 'active' : ''}`}
                     onClick={() => { toggleSidebar(); setActiveTab('home') }}
                     >
-                        <li>
+                        <li title="Home">
                             <MdHomeFilled className="sidebar-icon"/>
                             <p>Home</p>
                         </li>
@@ -40,7 +40,7 @@ function SignedOutSidebar(props) {
                     className={`page-link ${activeTab === 'subscriptions' ? 'active' : ''}`}
                     onClick={() => { toggleSidebar(); setActiveTab('subscriptions') }}
                     >
-                        <li>
+                        <li title="Subscriptions">
                             <BsCollectionPlay className="sidebar-icon"/>
                             <p>Subscriptions</p>
                         </li>
@@ -51,7 +51,7 @@ function SignedOutSidebar(props) {
                     className={`page-link ${activeTab === 'library' ? 'active' : ''}`}
                     onClick={() => { toggleSidebar(); setActiveTab('library') }}
                     >
-                        <li>
+                        <li title="Library">
                             <MdOutlineVideoLibrary className="sidebar-icon"/>
                             <p>Library</p>
                         </li>
@@ -62,7 +62,7 @@ function SignedOutSidebar(props) {
                     className={`page-link ${activeTab === 'history' ? 'active' : ''}`}
                     onClick={() => { toggleSidebar(); setActiveTab('history') }}
                     >
-                        <li>
+                        <li title="History">
                             <GrHistory className="sidebar-icon"/>
                             <p>History</p>
                         </li>

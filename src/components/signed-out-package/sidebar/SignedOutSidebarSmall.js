@@ -20,7 +20,7 @@ function SignedOutSidebarSmall(props) {
                 className={`small-page-link ${activeTab === 'home' ? 'active' : ''}`}
                 onClick={() => setActiveTab('home')}
                 >
-                    <li>
+                    <li title="Home">
                         <MdHomeFilled className="sidebar-icon"/>
                         <p>Home</p>
                     </li>
@@ -31,7 +31,7 @@ function SignedOutSidebarSmall(props) {
                 className={`small-page-link ${activeTab === 'subscriptions' ? 'active' : ''}`}
                 onClick={() => setActiveTab('subscriptions')}
                 >
-                    <li>
+                    <li title="Subscriptions">
                         <BsCollectionPlay className="sidebar-icon"/>
                         <p>Subscriptions</p>
                     </li>
@@ -42,7 +42,7 @@ function SignedOutSidebarSmall(props) {
                 className={`small-page-link ${activeTab === 'library' ? 'active' : ''}`}
                 onClick={() => setActiveTab('library')}
                 >
-                    <li>
+                    <li title="Library">
                         <MdOutlineVideoLibrary className="sidebar-icon"/>
                         <p>Library</p>
                     </li>
@@ -53,7 +53,7 @@ function SignedOutSidebarSmall(props) {
                 className={`small-page-link ${activeTab === 'history' ? 'active' : ''}`}
                 onClick={() => setActiveTab('history')}
                 >
-                    <li>
+                    <li title="History">
                         <GrHistory className="sidebar-icon"/>
                         <p>History</p>
                     </li>
