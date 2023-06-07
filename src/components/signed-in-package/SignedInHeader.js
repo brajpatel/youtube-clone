@@ -16,11 +16,11 @@ function SignedInHeader() {
                 </div>
             </div>
             <div className="header-end">
-                <div className="header-icon">
+                <div className="header-icon create">
                     <AiOutlinePlusSquare/>
                 </div>
-                <div className="header-icon">
-                    <BsBell/>
+                <div className="header-icon notifications">
+                    <BsBell title="Notifications"/>
                 </div>
                 <div className="profile-pic">
                     B

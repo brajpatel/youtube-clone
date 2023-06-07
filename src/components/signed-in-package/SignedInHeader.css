@@ -20,7 +20,8 @@
 
 .header-middle {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 40px;
     gap: 0.8rem;
     align-items: center;
 }
@@ -55,8 +56,35 @@
     width: 40px;
     border-radius: 50px;
     font-size: 1.2rem;
+    position: relative;
 }
 
 .header-icon:hover {
     background: rgb(230, 230, 230);
+}
+
+.header-icon::after {
+    position: absolute;
+    bottom: -115%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.header-icon.create::after {
+    content: 'Create';
+}
+
+.header-icon.notifications::after {
+    content: 'Notifications';
+}
+
+.header-icon:hover::after {
+    opacity: 1;
 }
