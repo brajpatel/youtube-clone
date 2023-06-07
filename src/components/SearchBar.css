@@ -40,7 +40,9 @@
     box-shadow: 0 0 1px grey;
 }
 
-
+.search-box .search-button:active {
+    color: black;
+}
 
 .clear-search-bar {
     background: none;
