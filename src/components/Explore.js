@@ -12,39 +12,47 @@ function Explore() {
     return (
         <>
             <p className="explore">Explore</p>
-            <li>
+            <li title="Trending">
                 <HiOutlineFire className="sidebar-icon"/>
                 <p>Trending</p>
             </li>
-            <li>
+
+            <li title="Music">
                 <TfiMusicAlt className="sidebar-icon"/>
                 <p>Music</p>
             </li>
-            <li>
+            
+            <li title="Movies & TV">
                 <MdOutlineMovie className="sidebar-icon"/>
                 <p>Movies & TV</p>
             </li>
-            <li>
+
+            <li title="Live">
                 <GiAerialSignal className="sidebar-icon"/>
                 <p>Live</p>
             </li>
-            <li>
+
+            <li title="Gaming">
                 <SiYoutubegaming className="sidebar-icon"/>
                 <p>Gaming</p>
             </li>
-            <li>
+
+            <li title="News">
                 <BsNewspaper className="sidebar-icon"/>
                 <p>News</p>
             </li>
-            <li>
+
+            <li title="Sport">
                 <BsTrophy className="sidebar-icon"/>
                 <p>Sport</p>
             </li>
-            <li>
+
+            <li title="Learning">
                 <AiOutlineBulb className="sidebar-icon"/>
                 <p>Learning</p>
             </li>
-            <li>
+
+            <li title="Fashion & beauty">
                 <TbHanger2 className="sidebar-icon"/>
                 <p>Fashion & beauty</p>
             </li>
