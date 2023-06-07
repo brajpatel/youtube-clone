@@ -15,18 +15,18 @@ function SignedInSidebarSmall(props) {
             </div>
             <ul>
                 <Link to="/" className="small-page-link">
-                    <li>
+                    <li title="Home">
                         <MdHomeFilled className="sidebar-icon"/>
                         <p>Home</p>
                     </li>
                 </Link>
             
-                <li>
+                <li title="Subscriptions">
                     <BsCollectionPlay className="sidebar-icon"/>
                     <p>Subscriptions</p>
                 </li>
 
-                <li>
+                <li title="Library">
                     <MdOutlineVideoLibrary className="sidebar-icon"/>
                     <p>Library</p>
                 </li>
