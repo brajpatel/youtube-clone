@@ -1,6 +1,6 @@
 import "./SignedInHeader.css";
 import youtubeLogo from "../../assets/youtube-logo.png";
-import SearchBar from "../SearchBar";
+import SearchBar from "../search-bar/SearchBar";
 import { FaMicrophone } from "react-icons/fa";
 import { AiOutlinePlusSquare } from "react-icons/ai";
 import { BsBell } from "react-icons/bs";

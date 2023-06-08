@@ -1,7 +1,6 @@
 import "./SignedOutHeader.css";
-import { useState } from "react";
 import youtubeLogo from "../../assets/youtube-logo.png";
-import SearchBar from "../SearchBar";
+import SearchBar from "../search-bar/SearchBar";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import SignInButton from "./SignInButton";
 
