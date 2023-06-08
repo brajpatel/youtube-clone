@@ -9,8 +9,8 @@ import { GrHistory } from "react-icons/gr";
 import { RiVideoLine } from "react-icons/ri";
 import { BiTimeFive } from "react-icons/bi";
 import { FiThumbsUp } from "react-icons/fi";
-import Explore from "../../Explore";
-import Support from "../../Support";
+import Explore from "../../sidebar-extra/Explore";
+import Support from "../../sidebar-extra/Support";
 
 function SignedInSidebar(props) {
     const { isOpen, toggleSidebar }  = props;
