@@ -5,11 +5,13 @@ import SearchBar from "../SearchBar";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import SignInButton from "./SignInButton";
 
-function SignedOutHeader() {
+function SignedOutHeader(props) {
+    const { setActiveTab } = props;
+
     return (
         <header className="signed-out-header">
             <img className="youtube-logo" src={youtubeLogo} alt="youtube-logo"/>
-            <SearchBar/>
+            <SearchBar setActiveTab={setActiveTab}/>
             <div className="header-end">
                 <div className="header-icon settings">
                     <HiOutlineDotsVertical/>

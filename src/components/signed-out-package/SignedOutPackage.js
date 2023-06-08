@@ -13,7 +13,7 @@ function SignedOutPackage() {
 
     return (
         <>
-            <SignedOutHeader/>
+            <SignedOutHeader setActiveTab={setActiveTab}/>
 
             <SignedOutSidebarSmall
             toggleSidebar={toggleSidebar}
