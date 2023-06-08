@@ -6,7 +6,7 @@ import SignedOutSubscriptions from './components/signed-out-package/signed-out-p
 import SignedOutLibrary from './components/signed-out-package/signed-out-pages/SignedOutLibrary';
 import SignedOutHistory from './components/signed-out-package/signed-out-pages/SignedOutHistory';
 import SignedInPackage from './components/signed-in-package/SignedInPackage';
-import HomePage from './components/HomePage';
+import HomePage from './components/homepage/HomePage';
 
 function App() {
   const [signedIn, setSignedIn] = useState(false);
