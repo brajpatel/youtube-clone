@@ -1,13 +1,29 @@
 .video-card {
     display: grid;
-    grid-template-rows: 2fr 1fr;
-    max-height: 300px;
+    grid-template-rows: 3fr 1fr;
+    max-width: 340px;
     border: 1px solid red;
 }
 
 .video-card .thumbnail {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid blue;
+    border-radius: 15px;
+}
+
+.video-card .thumbnail > .duration {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    border-radius: 8px;
+    padding: 4px 5px;
+}
+
+.video-card .bottom {
+    display: grid;
 }

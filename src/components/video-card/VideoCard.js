@@ -5,7 +5,8 @@ function VideoCard() {
     return (
         <div className="video-card">
             <div className="thumbnail">
-                Image
+                <p>Image</p>
+                <p className='duration'>11:29</p>
             </div>
             <div className='bottom'>
                 <div className='profile'>
