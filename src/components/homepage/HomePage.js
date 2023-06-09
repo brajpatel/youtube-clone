@@ -5,6 +5,25 @@ function HomePage() {
     return (
         <div className="home-page">
             <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
+            <VideoCard/>
         </div>
     )
 }
