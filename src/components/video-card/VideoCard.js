@@ -9,11 +9,12 @@ function VideoCard() {
                 <p className='duration'>11:29</p>
             </div>
             <div className='bottom'>
-                <div className='profile'>
-                    P
+                <div className='channel-icon'>
+                    <p>V</p>
                 </div>
 
                 <div className='info'>
+                    <p>This Game made my PC blow up...</p>
                     <p className='channel-name'>Vienna</p>
                     <p className='views-date'>350k views <RxDotFilled/> 4 days ago</p>
                 </div>
