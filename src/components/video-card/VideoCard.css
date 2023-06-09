@@ -1,0 +1,13 @@
+.video-card {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    max-height: 300px;
+    border: 1px solid red;
+}
+
+.video-card .thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}

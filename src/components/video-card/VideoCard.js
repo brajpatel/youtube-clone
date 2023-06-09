@@ -3,7 +3,7 @@ import { RxDotFilled } from "react-icons/rx";
 
 function VideoCard() {
     return (
-        <div className="card">
+        <div className="video-card">
             <div className="thumbnail">
                 Image
             </div>
