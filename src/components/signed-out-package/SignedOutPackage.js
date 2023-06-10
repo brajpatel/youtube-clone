@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SignedOutHeader from "./SignedOutHeader";
+import SignedOutHeader from "./header/SignedOutHeader";
 import SignedOutSidebar from "./sidebar/SignedOutSidebar";
 import SignedOutSidebarSmall from "./sidebar/SignedOutSidebarSmall";
 
