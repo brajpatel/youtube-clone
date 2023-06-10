@@ -71,3 +71,19 @@
         width: 60%;
     }
 }
+
+@media(max-width: 950px) {
+    .signed-out-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signed-out-header .search-box {
+        width: 70%;
+    }
+
+    .signed-out-header .header-end {
+        display: none;
+    }
+}
