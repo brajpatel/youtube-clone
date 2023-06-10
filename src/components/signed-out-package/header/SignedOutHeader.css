@@ -56,3 +56,18 @@
     opacity: 1
     ;
 }
+
+@media(max-width: 1300px) {
+    .signed-out-header {
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .signed-out-header .youtube-logo {
+        display: none;
+    }
+
+    .signed-out-header .search-box {
+        justify-self: end;
+        width: 60%;
+    }
+}
