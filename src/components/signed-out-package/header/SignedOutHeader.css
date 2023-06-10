@@ -53,8 +53,7 @@
 }
 
 .header-icon:hover::after {
-    opacity: 1
-    ;
+    opacity: 1;
 }
 
 @media(max-width: 1300px) {
@@ -63,24 +62,35 @@
     }
 }
 
-@media(max-width: 950px) {
+@media(max-width: 1000px) {
+    .signed-out-header {
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .signed-out-header .youtube-logo {
+        display: none;
+    }
+
+    .signed-out-header .search-box {
+        justify-self: end;
+        width: 70%;
+    }
+}
+
+@media(max-width: 900px) {
+    .signed-out-header .header-end > .header-icon {
+        display: none;
+    }
+}
+
+@media(max-width: 750px) {
     .signed-out-header {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .signed-out-header .search-box {
-        width: 70%;
-    }
-
     .signed-out-header .header-end {
         display: none;
-    }
-}
-
-@media(max-width: 550px) {
-    .signed-out-header .search-box {
-        width: auto;
     }
 }
