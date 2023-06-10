@@ -88,3 +88,55 @@
 .header-icon:hover::after {
     opacity: 1;
 }
+
+@media(max-width: 1300px) {
+    .signed-in-header {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+@media(max-width: 1000px) {
+    .signed-in-header {
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .signed-in-header .youtube-logo {
+        display: none;
+    }
+
+    .signed-in-header .search-box {
+        justify-self: end;
+        width: 60%;
+    }
+
+    .header-end {
+        gap: 0.4rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .header-middle > .header-icon {
+        display: none;
+    }
+}
+
+@media(max-width: 800px) {
+    .header-end {
+        gap: 0;
+    }
+
+    .header-end > .header-icon {
+        display: none;
+    }
+}
+
+@media(max-width: 700px) {
+    .signed-in-header {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .signed-in-header .search-box {
+        justify-self: start;
+        max-width: 40%;
+    }
+}

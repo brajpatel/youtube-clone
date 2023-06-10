@@ -59,16 +59,7 @@
 
 @media(max-width: 1300px) {
     .signed-out-header {
-        grid-template-columns: 4fr 1fr;
-    }
-
-    .signed-out-header .youtube-logo {
-        display: none;
-    }
-
-    .signed-out-header .search-box {
-        justify-self: end;
-        width: 60%;
+        grid-template-columns: 1fr 2fr 1fr;
     }
 }
 
