@@ -6,7 +6,7 @@ import { MdHomeFilled } from "react-icons/md";
 import { BsCollectionPlay } from "react-icons/bs";
 import { MdOutlineVideoLibrary } from "react-icons/md";
 import { GrHistory } from "react-icons/gr";
-import SignInButton from "../SignInButton";
+import SignInButton from "../sign-in-button/SignInButton";
 import Explore from "../../sidebar-extra/Explore";
 import Support from "../../sidebar-extra/Support";
 

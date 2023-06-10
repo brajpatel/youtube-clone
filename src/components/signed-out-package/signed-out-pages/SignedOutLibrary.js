@@ -1,6 +1,6 @@
 import "./SignedOutPage.css";
 import { MdOutlineVideoLibrary } from "react-icons/md";
-import SignInButton from "../SignInButton";
+import SignInButton from "../sign-in-button/SignInButton";
 
 function SignedOutLibrary() {
     return (

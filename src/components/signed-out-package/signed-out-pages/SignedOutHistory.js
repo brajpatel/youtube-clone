@@ -1,6 +1,6 @@
 import "./SignedOutPage.css";
 import { GrHistory } from "react-icons/gr";
-import SignInButton from "../SignInButton";
+import SignInButton from "../sign-in-button/SignInButton";
 
 function SignedOutHistory() {
     return (

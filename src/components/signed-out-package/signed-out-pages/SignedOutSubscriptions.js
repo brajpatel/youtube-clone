@@ -1,6 +1,6 @@
 import "./SignedOutPage.css";
 import { BsCollectionPlay } from "react-icons/bs";
-import SignInButton from "../SignInButton";
+import SignInButton from "../sign-in-button/SignInButton";
 
 function SignedOutSubscriptions() {
     return (
