@@ -8,7 +8,7 @@ import { BsBell } from "react-icons/bs";
 import AccountSettings from "../account-settings/AccountSettings";
 
 function SignedInHeader() {
-    const [isVisible, setIsVisible] = useState(true);
+    const [isVisible, setIsVisible] = useState(false);
 
     const toggleAccountSettings = () => {
         setIsVisible(!isVisible);
