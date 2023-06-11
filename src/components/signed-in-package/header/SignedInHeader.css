@@ -44,11 +44,17 @@
 
 .profile-pic {
     background: rgb(57, 107, 172);
-    color: #eaebea;
     border-radius: 50px;
     height: 40px;
     width: 40px;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic p {
+    color: #eaebea;
 }
 
 .header-icon {

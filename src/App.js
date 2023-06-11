@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <SignedOutPackage/>
+        <SignedInPackage/>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/subscriptions" element={<SignedOutSubscriptions/>}/>
