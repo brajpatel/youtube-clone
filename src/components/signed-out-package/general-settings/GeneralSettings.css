@@ -27,6 +27,10 @@
     padding: 0.6rem 1rem;
 }
 
+.general-settings li:hover {
+    background: rgb(240, 240, 240);
+}
+
 .general-settings li.settings {
     border-top: 1px solid rgb(215, 215, 215);
     border-bottom: 1px solid rgb(215, 215, 215);
