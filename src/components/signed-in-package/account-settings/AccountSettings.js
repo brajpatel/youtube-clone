@@ -1,5 +1,13 @@
 import './AccountSettings.css';
 import { FaRegUserCircle } from "react-icons/fa";
+import { MdExitToApp } from "react-icons/md";
+import { HiOutlineMoon } from "react-icons/hi";
+import { LuLanguages } from "react-icons/lu";
+import { GrLanguage } from "react-icons/gr";
+import { FaRegKeyboard } from "react-icons/fa";
+import { BiCog } from "react-icons/bi";
+import { AiOutlineQuestionCircle } from "react-icons/ai";
+import { BiMessageError } from "react-icons/bi";
 
 function AccountSettings() {
     return (
@@ -19,56 +27,36 @@ function AccountSettings() {
                     <p>Your channel</p>
                 </li>
                 <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
+                    <MdExitToApp/>
+                    <p>Sign out</p>
                 </li>
                 <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
+                    <HiOutlineMoon/>
+                    <p>Appearance: Light</p>
                 </li>
                 <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
+                    <LuLanguages/>
+                    <p>Language: British English</p>
                 </li>
                 <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
+                    <GrLanguage/>
+                    <p>Location: Earth</p>
                 </li>
                 <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
+                    <FaRegKeyboard/>
+                    <p>Keyboard shortcuts</p>
                 </li>
                 <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
+                    <BiCog/>
+                    <p>Settings</p>
                 </li>
                 <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
+                    <AiOutlineQuestionCircle/>
+                    <p>Help</p>
                 </li>
                 <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
-                </li>
-                <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
-                </li>
-                <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
-                </li>
-                <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
-                </li>
-                <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
-                </li>
-                <li>
-                    <FaRegUserCircle/>
-                    <p>Your channel</p>
+                    <BiMessageError/>
+                    <p>Send feedback</p>
                 </li>
             </ul>
         </div>
