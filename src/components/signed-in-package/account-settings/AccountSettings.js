@@ -1,6 +1,7 @@
 import './AccountSettings.css';
 import { FaRegUserCircle } from "react-icons/fa";
 import { MdExitToApp } from "react-icons/md";
+import GeneralSettings from '../../general-settings/GeneralSettings';
 
 function AccountSettings() {
     return (
@@ -23,7 +24,7 @@ function AccountSettings() {
                     <MdExitToApp className='icon'/>
                     <p>Sign out</p>
                 </li>
-                
+                <GeneralSettings/>
             </ul>
         </div>
     )
