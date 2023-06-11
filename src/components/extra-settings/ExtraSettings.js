@@ -6,7 +6,7 @@ import { BiCog } from "react-icons/bi";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { BiMessageError } from "react-icons/bi";
 
-function GeneralSettings() {
+function ExtraSettings() {
     return (
         <>
             <li className='appearance'>
@@ -41,4 +41,4 @@ function GeneralSettings() {
     )
 }
 
-export default GeneralSettings;
+export default ExtraSettings;
