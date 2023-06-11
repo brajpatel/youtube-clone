@@ -18,7 +18,7 @@ function AccountSettings() {
                 </div>
                 <div className='account-details'>
                     <p>Brajesh Patel</p>
-                    <a href="#">Manage your Google Account</a>
+                    <button>Manage your Google Account</button>
                 </div>
             </div>
             <ul>

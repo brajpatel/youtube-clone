@@ -18,13 +18,13 @@
     font-size: 1.2rem;
 }
 
-.account-profile .account-details a {
+.account-profile .account-details button {
     color: blue;
     font-size: 0.9rem;
-}
-
-.account-profile .account-details a:visited {
-    color: blue;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .account-settings ul {
