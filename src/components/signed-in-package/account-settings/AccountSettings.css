@@ -6,3 +6,13 @@
     box-shadow: 0 0 15px lightgray;
     border-radius: 8px;
 }
+
+.account-settings ul > li {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+}
+
+.account-settings ul > li:hover {
+    background: rgb(240, 240, 240);
+}
