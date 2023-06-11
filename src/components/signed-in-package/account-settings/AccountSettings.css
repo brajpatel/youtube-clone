@@ -38,6 +38,16 @@
     padding: 0.6rem 1rem;
 }
 
+.account-settings ul > li.your-channel,
+.account-settings ul > li.appearance {
+    border-top: 1px solid rgb(215, 215, 215);
+}
+
+.account-settings ul > li.settings {
+    border-top: 1px solid rgb(215, 215, 215);
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
 .account-settings ul > li:hover {
     background: rgb(240, 240, 240);
 }

@@ -22,7 +22,7 @@ function AccountSettings() {
                 </div>
             </div>
             <ul>
-                <li>
+                <li className='your-channel'>
                     <FaRegUserCircle className='icon'/>
                     <p>Your channel</p>
                 </li>
@@ -30,7 +30,7 @@ function AccountSettings() {
                     <MdExitToApp className='icon'/>
                     <p>Sign out</p>
                 </li>
-                <li>
+                <li className='appearance'>
                     <HiOutlineMoon className='icon'/>
                     <p>Appearance: Light</p>
                 </li>
@@ -46,7 +46,7 @@ function AccountSettings() {
                     <FaRegKeyboard className='icon'/>
                     <p>Keyboard shortcuts</p>
                 </li>
-                <li>
+                <li className='settings'>
                     <BiCog className='icon'/>
                     <p>Settings</p>
                 </li>
