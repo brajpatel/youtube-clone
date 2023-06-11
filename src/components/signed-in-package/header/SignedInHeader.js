@@ -8,7 +8,7 @@ import { BsBell } from "react-icons/bs";
 import AccountSettings from "../account-settings/AccountSettings";
 
 function SignedInHeader() {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
 
     const toggleAccountSettings = () => {
         setIsVisible(!isVisible);
@@ -32,7 +32,7 @@ function SignedInHeader() {
                 </div>
                 <div className="profile-pic" onClick={toggleAccountSettings}>
                     <p>B</p>
-                    
+                    {isVisible ? <AccountSettings/> : null}
                 </div>
             </div>
         </header>
