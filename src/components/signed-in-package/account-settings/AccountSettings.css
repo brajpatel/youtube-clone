@@ -4,15 +4,44 @@
     right: 4rem;
     background: white;
     box-shadow: 0 0 15px lightgray;
-    border-radius: 8px;
+    border-radius: 14px;
+    padding: 0.6rem 0;
+}
+
+.account-profile {
+    display: flex;
+    gap: 0.8rem;
+    padding: 0.8rem;
+}
+
+.account-profile .account-details p {
+    font-size: 1.2rem;
+}
+
+.account-profile .account-details a {
+    color: blue;
+    font-size: 0.9rem;
+}
+
+.account-profile .account-details a:visited {
+    color: blue;
+}
+
+.account-settings ul {
+    overflow: auto;
 }
 
 .account-settings ul > li {
     display: grid;
     grid-template-columns: 40px 1fr;
     align-items: center;
+    padding: 0.6rem 1rem;
 }
 
 .account-settings ul > li:hover {
     background: rgb(240, 240, 240);
+}
+
+.account-settings ul > li > .icon {
+    font-size: 1.25rem;
 }

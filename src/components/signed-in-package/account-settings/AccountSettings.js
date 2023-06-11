@@ -16,46 +16,46 @@ function AccountSettings() {
                 <div className='profile-pic'>
                     <p>B</p>
                 </div>
-                <div className='profile-details'>
+                <div className='account-details'>
                     <p>Brajesh Patel</p>
                     <a href="#">Manage your Google Account</a>
                 </div>
             </div>
             <ul>
                 <li>
-                    <FaRegUserCircle/>
+                    <FaRegUserCircle className='icon'/>
                     <p>Your channel</p>
                 </li>
                 <li>
-                    <MdExitToApp/>
+                    <MdExitToApp className='icon'/>
                     <p>Sign out</p>
                 </li>
                 <li>
-                    <HiOutlineMoon/>
+                    <HiOutlineMoon className='icon'/>
                     <p>Appearance: Light</p>
                 </li>
                 <li>
-                    <LuLanguages/>
+                    <LuLanguages className='icon'/>
                     <p>Language: British English</p>
                 </li>
                 <li>
-                    <GrLanguage/>
+                    <GrLanguage className='icon'/>
                     <p>Location: Earth</p>
                 </li>
                 <li>
-                    <FaRegKeyboard/>
+                    <FaRegKeyboard className='icon'/>
                     <p>Keyboard shortcuts</p>
                 </li>
                 <li>
-                    <BiCog/>
+                    <BiCog className='icon'/>
                     <p>Settings</p>
                 </li>
                 <li>
-                    <AiOutlineQuestionCircle/>
+                    <AiOutlineQuestionCircle className='icon'/>
                     <p>Help</p>
                 </li>
                 <li>
-                    <BiMessageError/>
+                    <BiMessageError className='icon'/>
                     <p>Send feedback</p>
                 </li>
             </ul>
