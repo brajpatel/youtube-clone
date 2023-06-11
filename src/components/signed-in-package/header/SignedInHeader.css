@@ -54,7 +54,7 @@
     color: #eaebea;
 }
 
-.header-icon {
+.signed-in-header div > .header-icon {
     height: 40px;
     width: 40px;
     border-radius: 50px;
@@ -66,7 +66,7 @@
     background: rgb(230, 230, 230);
 }
 
-.header-icon::after {
+.signed-in-header div > .header-icon::after {
     position: absolute;
     bottom: -115%;
     left: 50%;
@@ -80,15 +80,15 @@
     pointer-events: none;
 }
 
-.header-icon.create::after {
+.signed-in-header div > .header-icon.create::after {
     content: 'Create';
 }
 
-.header-icon.notifications::after {
+.signed-in-header div > .header-icon.notifications::after {
     content: 'Notifications';
 }
 
-.header-icon:hover::after {
+.signed-in-header div > .header-icon:hover::after {
     opacity: 1;
 }
 

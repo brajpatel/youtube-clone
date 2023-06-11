@@ -1,8 +1,9 @@
+import "./GeneralSettings.css";
 import ExtraSettings from "../../extra-settings/ExtraSettings";
 
 function GeneralSettings() {
     return (
-        <div>
+        <div className="general-settings">
             <ExtraSettings/>
         </div>
     )

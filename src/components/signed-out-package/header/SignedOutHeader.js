@@ -20,8 +20,8 @@ function SignedOutHeader(props) {
             <img className="youtube-logo" src={youtubeLogo} alt="youtube-logo"/>
             <SearchBar setActiveTab={setActiveTab}/>
             <div className="header-end">
-                <div className="header-icon settings">
-                    <HiOutlineDotsVertical onClick={toggleAccountSettings}/>
+                <div className="header-icon" onClick={toggleAccountSettings}>
+                    <HiOutlineDotsVertical/>
                     {isVisible ? <GeneralSettings/> : null}
                 </div>
                 <SignInButton/>
