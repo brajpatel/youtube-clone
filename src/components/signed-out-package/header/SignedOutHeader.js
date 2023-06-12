@@ -9,7 +9,7 @@ import SignInButton from "../sign-in-button/SignInButton";
 function SignedOutHeader(props) {
     const { setActiveTab } = props;
 
-    const [isVisible, setIsVisible] = useState(true);
+    const [isVisible, setIsVisible] = useState(false);
 
     const toggleAccountSettings = () => {
         setIsVisible(!isVisible);
