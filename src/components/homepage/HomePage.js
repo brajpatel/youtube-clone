@@ -1,24 +1,24 @@
 import "./HomePage.css";
-import VideoCard from "../video-card/VideoCard";
+import GeneralVideoCard from "../video-cards/general-video-card/GeneralVideoCard";
 
 function HomePage() {
     return (
         <div className="home-page">
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
-            <VideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
+            <GeneralVideoCard/>
         </div>
     )
 }

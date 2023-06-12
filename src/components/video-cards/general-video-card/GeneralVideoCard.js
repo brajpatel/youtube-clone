@@ -1,7 +1,7 @@
-import './VideoCard.css';
+import './GeneralVideoCard.css';
 import { RxDotFilled } from "react-icons/rx";
 
-function VideoCard() {
+function GeneralVideoCard() {
     return (
         <div className="video-card">
             <div className="thumbnail">
@@ -23,4 +23,4 @@ function VideoCard() {
     )
 }
 
-export default VideoCard;
+export default GeneralVideoCard;
