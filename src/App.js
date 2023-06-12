@@ -7,6 +7,7 @@ import SignedOutLibrary from './components/signed-out-package/signed-out-pages/S
 import SignedOutHistory from './components/signed-out-package/signed-out-pages/SignedOutHistory';
 import SignedInPackage from './components/signed-in-package/SignedInPackage';
 import HomePage from './components/homepage/HomePage';
+import SearchedResultsPage from './components/searched-results-page/SearchedResultsPage';
 
 function App() {
   const [signedIn, setSignedIn] = useState(false);
@@ -20,6 +21,7 @@ function App() {
           <Route path="/subscriptions" element={<SignedOutSubscriptions/>}/>
           <Route path="/library" element={<SignedOutLibrary/>}/>
           <Route path="/history" element={<SignedOutHistory/>}/>
+          <Route path="/search:input" element={<SearchedResultsPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
