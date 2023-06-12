@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 function SearchBar(props) {
     const { setActiveTab } = props;
+    const navigate = useNavigate();
     
     const [searchInput, setSearchInput] = useState('');
 
@@ -16,13 +17,17 @@ function SearchBar(props) {
     const clearSearchBar = () => {
         setSearchInput('');
     }
+
+    const handleSubmit = () => {
+        // navigate(`/search/${input}`);
+    }
     
     return (
         <div className="search-box">
             <input onChange={handleChange} placeholder="Search" value={searchInput} type="text"/>
-            <Link to="/" className="search-button" onClick={() => setActiveTab('')}>
+            <div className="search-button" onClick={() => { setActiveTab(''); handleSubmit()}}>
                 <RxMagnifyingGlass/>
-            </Link>
+            </div>
             <button className={`clear-search-bar ${searchInput.length ? 'show' : ''}`} onClick={clearSearchBar}><RxCross1/></button>
         </div>
     )
