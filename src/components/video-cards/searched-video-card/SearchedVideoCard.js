@@ -7,3 +7,5 @@ function SearchedVideoCard() {
         </div>
     )
 }
+
+export default SearchedVideoCard;
