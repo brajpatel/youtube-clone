@@ -1,14 +1,17 @@
 import './GeneralVideoCard.css';
+import { formatVideoDuration } from '../../../utils/formatVideoDuration';
 import { RxDotFilled } from "react-icons/rx";
 
 function GeneralVideoCard(props) {
     const { info } = props;
 
+    let videoDuration = formatVideoDuration(parseFloat(info.contentDetails.duration));
+
     return (
         <div className="general-video-card">
             <div className="thumbnail">
                 <img src={info.snippet.thumbnails.medium.url}/>
-                <p className='duration'>11:29</p>
+                <p className='duration'>{videoDuration}</p>
             </div>
             <div className='bottom'>
                 <div className='channel-icon'>

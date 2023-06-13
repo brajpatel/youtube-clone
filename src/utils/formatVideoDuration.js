@@ -1,4 +1,4 @@
-export function getVideoDuration(duration) {
+export function formatVideoDuration(duration) {
     let total = 0;
     let hours = duration.match(/(\d+)H/);
     let minutes = duration.match(/(\d+)M/);
