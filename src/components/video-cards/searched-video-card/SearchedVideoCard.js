@@ -21,7 +21,7 @@ function SearchedVideoCard() {
                     </div>
                     <p className='channel-name'>Vienna</p>
                 </div>
-                <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sit amet, consectetur adipiscing. Sajkit amet, consectetur adipiscing.</p>
             </div>
 
             <p className="video-actions"><HiOutlineDotsVertical/></p>

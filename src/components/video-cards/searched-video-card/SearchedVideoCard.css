@@ -1,7 +1,6 @@
 .searched-video-card {
     width: 95%;
-    gap: 0.8rem;
-    border: 1px solid red;
+    gap: 1rem;
     display: grid;
     grid-template-columns: 360px 1fr;
     position: relative;
@@ -15,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
+    border: 1px solid #565656;
     border-radius: 15px;
 }
 
@@ -30,6 +29,7 @@
 }
 
 .searched-video-card .info {
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -58,11 +58,17 @@
 }
 
 .video-actions {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 0.6rem;
     right: 0.8rem;
     font-size: 1.1rem;
     cursor: pointer;
+    border-radius: 50px;
     opacity: 0;
 }
 
@@ -70,6 +76,6 @@
     background: rgb(230, 230, 230);
 }
 
-.video-actions:hover .video-actions {
+.searched-video-card:hover .video-actions {
     opacity: 1;
 }
