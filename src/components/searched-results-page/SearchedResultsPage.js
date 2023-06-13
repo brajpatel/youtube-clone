@@ -3,7 +3,11 @@ import SearchedVideoCard from "../video-cards/searched-video-card/SearchedVideoC
 
 function SearchedResultsPage() {
     return (
-        <div>
+        <div className="searched-results-page">
+            <SearchedVideoCard/>
+            <SearchedVideoCard/>
+            <SearchedVideoCard/>
+            <SearchedVideoCard/>
             <SearchedVideoCard/>
         </div>
     )
