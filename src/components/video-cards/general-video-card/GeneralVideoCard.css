@@ -32,12 +32,11 @@
 }
 
 .general-video-card .bottom > .channel-icon {
-    border-radius: 50px;
     height: 40px;
     width: 40px;
-    background: cadetblue;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.general-video-card .bottom > .channel-icon > img {
+    max-height: 100%;
+    border-radius: 50px;
 }

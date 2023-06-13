@@ -10,5 +10,7 @@ export const getChannelIcon = async (channelId) => {
     console.log(err);
   });
 
+  console.log(channelIcon.data.items[0].snippet.thumbnails.default.url);
+
   return channelIcon.data.items[0].snippet.thumbnails.default.url;
 };

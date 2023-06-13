@@ -13,7 +13,5 @@ export const getPopularVideos = async () => {
         console.log(err);
     })
     
-    console.log(response.data.items);
-    
     return response.data.items;
 }
