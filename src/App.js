@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <SignedOutPackage/>
         <Routes>
-          <Route path="/" element={<HomePage/>}/>
+          <Route path="/" element={<SearchedResultsPage/>}/>
           <Route path="/subscriptions" element={<SignedOutSubscriptions/>}/>
           <Route path="/library" element={<SignedOutLibrary/>}/>
           <Route path="/history" element={<SignedOutHistory/>}/>

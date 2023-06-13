@@ -14,7 +14,7 @@ function GeneralVideoCard() {
                 </div>
 
                 <div className='info'>
-                    <p>This Game made my PC blow up...</p>
+                    <p className='video-title'>This Game made my PC blow up...</p>
                     <p className='channel-name'>Vienna</p>
                     <p className='views-date'>350k views <RxDotFilled/> 4 days ago</p>
                 </div>
