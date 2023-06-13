@@ -16,7 +16,7 @@ function GeneralVideoCard(props) {
                 </div>
 
                 <div className='info'>
-                    <p className='video-title'>{info.snippet.localized.title}</p>
+                    <p className='video-title'>{info.snippet.title}</p>
                     <p className='channel-name'>{info.snippet.channelTitle}</p>
                     <p className='views-date'>350k views <RxDotFilled/> 4 days ago</p>
                 </div>

@@ -1,9 +1,9 @@
 .general-video-card {
-    display: grid;
-    grid-template-rows: 3fr 1fr;
-    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    max-height: 280px;
     max-width: 320px;
-    gap: 0.8rem;
+    gap: 0.6rem;
 }
 
 .general-video-card .thumbnail {
