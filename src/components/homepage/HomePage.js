@@ -3,7 +3,7 @@ import { useState } from "react";
 import GeneralVideoCard from "../video-cards/general-video-card/GeneralVideoCard";
 
 function HomePage() {
-    const [videos, setVideos] = useState([]);
+    const [homeVideos, setHomeVideos] = useState([]);
     
     return (
         <div className="home-page">
