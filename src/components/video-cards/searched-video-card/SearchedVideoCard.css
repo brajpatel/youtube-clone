@@ -1,9 +1,10 @@
 .searched-video-card {
-    width: 100%;
+    width: 95%;
     gap: 0.8rem;
     border: 1px solid red;
     display: grid;
     grid-template-columns: 360px 1fr;
+    position: relative;
 }
 
 .searched-video-card .thumbnail {
@@ -54,4 +55,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.video-actions {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.8rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.video-actions:hover {
+    background: rgb(230, 230, 230);
+}
+
+.video-actions:hover .video-actions {
+    opacity: 1;
 }

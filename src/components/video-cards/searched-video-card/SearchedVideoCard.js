@@ -1,5 +1,6 @@
 import "./SearchedVideoCard.css";
 import { RxDotFilled } from "react-icons/rx";
+import { HiOutlineDotsVertical } from "react-icons/hi";
 
 function SearchedVideoCard() {
     return (
@@ -22,6 +23,8 @@ function SearchedVideoCard() {
                 </div>
                 <p className="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
+
+            <p className="video-actions"><HiOutlineDotsVertical/></p>
         </div>
     )
 }
