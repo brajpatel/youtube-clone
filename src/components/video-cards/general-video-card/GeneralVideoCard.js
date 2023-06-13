@@ -5,7 +5,7 @@ import { RxDotFilled } from "react-icons/rx";
 function GeneralVideoCard(props) {
     const { info } = props;
 
-    let videoDuration = formatVideoDuration(parseFloat(info.contentDetails.duration));
+    let videoDuration = formatVideoDuration(info.contentDetails.duration);
 
     return (
         <div className="general-video-card">
