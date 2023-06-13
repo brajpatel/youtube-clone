@@ -34,7 +34,7 @@
     border: 1px solid green;
 }
 
-.general-video-card .bottom > .channel-icon p {
+.general-video-card .bottom > .channel-icon {
     border-radius: 50px;
     height: 40px;
     width: 40px;

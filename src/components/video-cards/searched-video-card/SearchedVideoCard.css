@@ -1,0 +1,57 @@
+.searched-video-card {
+    width: 100%;
+    gap: 0.8rem;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+}
+
+.searched-video-card .thumbnail {
+    min-height: 200px;
+    min-width: 320px;
+    max-width: 360px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    border-radius: 15px;
+}
+
+.searched-video-card .thumbnail > .duration {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    border-radius: 8px;
+    padding: 4px 5px;
+}
+
+.searched-video-card .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.searched-video-card .info > .video-details > .video-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.searched-video-card .info > .channel-details {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.searched-video-card .info > .channel-details > .channel-icon {
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    background: cadetblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
