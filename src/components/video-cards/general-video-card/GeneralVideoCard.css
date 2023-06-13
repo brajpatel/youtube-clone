@@ -1,4 +1,4 @@
-.video-card {
+.general-video-card {
     display: grid;
     grid-template-rows: 3fr 1fr;
     max-width: 360px;
@@ -8,7 +8,7 @@
     max-width: 360px;
 }
 
-.video-card .thumbnail {
+.general-video-card .thumbnail {
     max-width: 100%;
     position: relative;
     display: flex;
@@ -18,7 +18,7 @@
     border-radius: 15px;
 }
 
-.video-card .thumbnail > .duration {
+.general-video-card .thumbnail > .duration {
     background: rgba(0, 0, 0, 0.7);
     color: white;
     position: absolute;
@@ -28,13 +28,13 @@
     padding: 4px 5px;
 }
 
-.video-card .bottom {
+.general-video-card .bottom {
     display: flex;
     gap: 0.5rem;
     border: 1px solid green;
 }
 
-.video-card .bottom > .channel-icon p {
+.general-video-card .bottom > .channel-icon p {
     border-radius: 50px;
     height: 40px;
     width: 40px;

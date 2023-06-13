@@ -3,7 +3,7 @@ import { RxDotFilled } from "react-icons/rx";
 
 function GeneralVideoCard() {
     return (
-        <div className="video-card">
+        <div className="general-video-card">
             <div className="thumbnail">
                 <p>Image</p>
                 <p className='duration'>11:29</p>
