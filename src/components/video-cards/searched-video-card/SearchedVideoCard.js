@@ -1,8 +1,19 @@
 import "./SearchedVideoCard.css";
+import { useState } from "react";
+import { formateVideoDuration } from '../../../utils/formatVideoDuration';
+import { getChannelIcon } from '../../../api/getChannelIcon';
+import { formatViewCount } from '../../../utils/formatViewCount';
+import { formatVideoDate } from '../../../utils/formatVideoDate';
+import { formatViewDescription } from "../../../utils/formatViewDescription";
 import { RxDotFilled } from "react-icons/rx";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 
-function SearchedVideoCard() {
+function SearchedVideoCard(props) {
+    const { info } = props;
+    const [channelIcon, setChannelIcon] = useState('');
+
+    
+
     return (
         <div className="searched-video-card">
             <div className="thumbnail">
