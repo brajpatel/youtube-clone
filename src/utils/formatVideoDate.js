@@ -1,5 +1,5 @@
 export function formatVideoDate(date) {
-    let videoDate = newDate(date);
+    let videoDate = new Date(date);
     let currentDate = new Date();
 
     let numDays = Math.floor((currentDate - videoDate) / 86400000);

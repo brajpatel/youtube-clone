@@ -11,7 +11,7 @@ function GeneralVideoCard(props) {
     const [channelIcon, setChannelIcon] = useState('');
 
     let videoDuration = formatVideoDuration(info.contentDetails.duration);
-    let videoViews = formatViewCount(Number(info.statistics.viewCount));
+    let videoViews = formatViewCount(info.statistics.viewCount);
     let videoDate = formatVideoDate(info.snippet.publishedAt);
 
     useEffect(() => {
