@@ -1,8 +1,7 @@
 .general-video-card {
-    display: flex;
-    flex-direction: column;
-    max-height: 280px;
     max-width: 320px;
+    display: grid;
+    grid-template-rows: 180px 1fr;
     gap: 0.6rem;
 }
 
