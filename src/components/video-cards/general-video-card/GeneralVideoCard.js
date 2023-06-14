@@ -30,13 +30,13 @@ function GeneralVideoCard(props) {
             </div>
             <div className='bottom'>
                 <div className='channel-icon'>
-                    <img src="https://yt3.ggpht.com/d1Y-nXfndysBVcaFq30rUFkRmwIk5-aFh3cJ8bDbzmJXr-e3k0f_NUqFwIB-9_3PqTYMTHVFXA=s88-c-k-c0x00ffffff-no-rj" alt="channel-icon"/>
+                    <img src={channelIcon} alt="channel-icon"/>
                 </div>
 
                 <div className='info'>
                     <p className='video-title'>{info.snippet.title}</p>
                     <p className='channel-name'>{info.snippet.channelTitle}</p>
-                    <p className='views-date'>{videoViews} views <RxDotFilled/> 4 days ago</p>
+                    <p className='views-date'>{videoViews} views <RxDotFilled/> {videoDate}</p>
                 </div>
             </div>
         </div>
