@@ -1,4 +1,5 @@
 import './GeneralVideoCard.css';
+import { useEffect, useState } from 'react';
 import { formatVideoDuration } from '../../../utils/formatVideoDuration';
 import { getChannelIcon } from "../../../api/getChannelIcon";
 import { formatViewCount } from '../../../utils/formatViewCount';
@@ -7,11 +8,19 @@ import { RxDotFilled } from "react-icons/rx";
 
 function GeneralVideoCard(props) {
     const { info } = props;
+    const [channelIcon, setChannelIcon] = useState('');
 
     let videoDuration = formatVideoDuration(info.contentDetails.duration);
-    let channelIcon = getChannelIcon(info.snippet.channelId);
     let videoViews = formatViewCount(Number(info.statistics.viewCount));
     let videoDate = formatVideoDate(info.snippet.publishedAt);
+
+    useEffect(() => {
+        const getIcon = async () => {
+            setChannelIcon(await getChannelIcon(info.snippet.channelId));
+        }
+
+        getIcon();
+    }, []);
 
     return (
         <div className="general-video-card">
