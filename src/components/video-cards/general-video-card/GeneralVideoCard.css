@@ -39,3 +39,17 @@
     max-height: 100%;
     border-radius: 50px;
 }
+
+.general-video-card .bottom > .info .video-title {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.general-video-card .bottom > .info > p:not(:first-child) {
+    color: rgb(95, 95, 95);
+}
+
+.general-video-card .bottom > .info > .views-date {
+    display: flex;
+    align-items: center;
+}

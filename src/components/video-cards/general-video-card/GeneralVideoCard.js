@@ -25,7 +25,7 @@ function GeneralVideoCard(props) {
     return (
         <div className="general-video-card">
             <div className="thumbnail">
-                <img src={info.snippet.thumbnails.medium.url}/>
+                <img src={info.snippet.thumbnails.medium.url} alt='video-thumbnail'/>
                 <p className='duration'>{videoDuration}</p>
             </div>
             <div className='bottom'>
@@ -35,7 +35,7 @@ function GeneralVideoCard(props) {
 
                 <div className='info'>
                     <p className='video-title'>{info.snippet.title}</p>
-                    <p className='channel-name'>{info.snippet.channelTitle}</p>
+                    <p>{info.snippet.channelTitle}</p>
                     <p className='views-date'>{videoViews} <RxDotFilled/> {videoDate}</p>
                 </div>
             </div>
