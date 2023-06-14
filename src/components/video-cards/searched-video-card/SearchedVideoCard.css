@@ -1,8 +1,8 @@
 .searched-video-card {
     width: 95%;
-    gap: 1rem;
     display: grid;
     grid-template-columns: 320px 1fr;
+    gap: 1rem;
     position: relative;
 }
 
@@ -12,8 +12,13 @@
 }
 
 .searched-video-card .thumbnail > .duration {
-    max-width: 100%;
-    border: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    border-radius: 8px;
+    padding: 4px 5px;
 }
 
 .searched-video-card .info {
@@ -24,13 +29,18 @@
 }
 
 .searched-video-card .info > .video-details > .video-title {
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .searched-video-card .info > .video-details > .views-date {
     display: flex;
     align-items: center;
+}
+
+.searched-video-card .info > .video-details > .views-date,
+.searched-video-card .info >.channel-details,
+.searched-video-card .info > .description {
+    color: rgb(95, 95, 95);
 }
 
 .searched-video-card .info > .channel-details {
