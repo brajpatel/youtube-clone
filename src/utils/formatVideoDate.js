@@ -21,5 +21,24 @@ export function formatVideoDate(date) {
             return numMonths === 1 ? '1 hours ago' : `${numMonths} hours ago`;
         }
     }
-    
+    else {
+        if(numDays < 14) {
+            return numDays === 1 ? '1 day ago' : `${numDays} days ago`;
+        }
+        else if(numDays >= 14 && numDays < 31) {
+            let numWeeks = Math.floor(numDays / 7);
+
+            return numWeeks === 1 ? '1 week ago' : `${numWeeks} weeks ago`;
+        }
+        else if(numDays >= 31 && numDays < 365) {
+            let numMonths = Math.floor(numDays / 31);
+
+            return numMonths === 1 ? '1 month ago' : `${numMonths} months ago`;
+        }
+        else {
+            let numYears = Math.floor(numDays / 365);
+
+            return numYears === 1 ? '1 year ago' : `${numYears} years ago`;
+        }
+    }
 }
