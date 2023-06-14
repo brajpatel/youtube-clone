@@ -2,30 +2,18 @@
     width: 95%;
     gap: 1rem;
     display: grid;
-    grid-template-columns: 360px 1fr;
+    grid-template-columns: 320px 1fr;
     position: relative;
 }
 
 .searched-video-card .thumbnail {
-    min-height: 200px;
-    min-width: 320px;
-    max-width: 360px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #565656;
-    border-radius: 15px;
+    max-height: 180px;
 }
 
 .searched-video-card .thumbnail > .duration {
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    border-radius: 8px;
-    padding: 4px 5px;
+    max-width: 100%;
+    border: 15px;
 }
 
 .searched-video-card .info {
@@ -40,6 +28,11 @@
     font-weight: bold;
 }
 
+.searched-video-card .info > .video-details > .views-date {
+    display: flex;
+    align-items: center;
+}
+
 .searched-video-card .info > .channel-details {
     display: flex;
     align-items: center;
@@ -47,14 +40,13 @@
 }
 
 .searched-video-card .info > .channel-details > .channel-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.searched-video-card .info > .channel-details > .channel-icon > img {
+    max-width: 100%;
     border-radius: 50px;
-    height: 35px;
-    width: 35px;
-    background: cadetblue;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .video-actions {
