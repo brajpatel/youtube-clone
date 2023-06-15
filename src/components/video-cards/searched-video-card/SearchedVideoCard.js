@@ -17,13 +17,13 @@ function SearchedVideoCard(props) {
     let videoDate = formatVideoDate(info.snippet.publishedAt);
     let videoDescription = formatVideoDescription(info.snippet.description);
 
-    useEffect(() => {
-        const getIcon = async () => {
-            setChannelIcon(await getChannelIcon(info.snippet.channelId));
-        }
+    // useEffect(() => {
+    //     const getIcon = async () => {
+    //         setChannelIcon(await getChannelIcon(info.snippet.channelId));
+    //     }
 
-        getIcon();
-    }, []);
+    //     getIcon();
+    // }, []);
 
     return (
         <div className="searched-video-card">
