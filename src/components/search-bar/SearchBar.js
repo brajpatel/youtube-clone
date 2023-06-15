@@ -18,14 +18,14 @@ function SearchBar(props) {
         setInput('');
     }
 
-    const handleSubmit = () => {
-        // navigate(`/search/${input}`);
+    const changeTab = () => {
+        input.trim() === '' ? setActiveTab('home') : setActiveTab('');
     }
     
     return (
         <div className="search-box">
             <input onChange={handleChange} placeholder="Search" value={input} type="text"/>
-            <Link to={input === '' ? '/' : `/search/${input}`} className="search-button" onClick={() => { setActiveTab(''); handleSubmit()}}>
+            <Link to={input.trim() === '' ? '/' : `/search/${input}`} className="search-button" onClick={changeTab}>
                 <RxMagnifyingGlass/>
             </Link>
             <button className={`clear-search-bar ${input.length ? 'show' : ''}`} onClick={clearSearchBar}><RxCross1/></button>
