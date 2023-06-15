@@ -14,9 +14,9 @@ function GeneralVideoCard(props) {
     const [videoDate, setVideoDate] = useState('');
 
     useEffect(() => {
-            setVideoDuration(formatVideoDuration(info.contentDetails.duration));
-            setVideoViews(formatViewCount(info.statistics.viewCount));
-            setVideoDate(formatVideoDate(info.snippet.publishedAt));
+        setVideoDuration(formatVideoDuration(info.contentDetails.duration));
+        setVideoViews(formatViewCount(info.statistics.viewCount));
+        setVideoDate(formatVideoDate(info.snippet.publishedAt));
 
         // const getIcon = async () => {
         //     setChannelIcon(await getChannelIcon(info.snippet.channelId));

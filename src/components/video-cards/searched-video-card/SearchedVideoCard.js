@@ -10,20 +10,25 @@ import { HiOutlineDotsVertical } from "react-icons/hi";
 
 function SearchedVideoCard(props) {
     const { info } = props;
+    const [videoDuration, setVideoDuration] = useState('');
     const [channelIcon, setChannelIcon] = useState('');
+    const [videoViews, setVideoViews] = useState('');
+    const [videoDate, setVideoDate] = useState('');
+    const [videoDescription, setVideoDescription] = useState('');
 
-    let videoDuration = formatVideoDuration(info.contentDetails.duration);
-    let videoViews = formatViewCount(info.statistics.viewCount);
-    let videoDate = formatVideoDate(info.snippet.publishedAt);
-    let videoDescription = formatVideoDescription(info.snippet.description);
 
-    // useEffect(() => {
-    //     const getIcon = async () => {
-    //         setChannelIcon(await getChannelIcon(info.snippet.channelId));
-    //     }
+    useEffect(() => {
+        // setVideoDuration(formatVideoDuration(info.contentDetails.duration));
+        // setVideoViews(formatViewCount(info.statistics.viewCount));
+        // setVideoDate(formatVideoDate(info.snippet.publishedAt));
+        // setVideoDescription(formatVideoDescription());
+
+        // const getIcon = async () => {
+        //      setChannelIcon(await getChannelIcon(info.snippet.channelId));
+        // }
 
     //     getIcon();
-    // }, []);
+    }, []);
 
     return (
         <div className="searched-video-card">
