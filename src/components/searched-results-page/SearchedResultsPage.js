@@ -6,7 +6,11 @@ import SearchedVideoCard from "../video-cards/searched-video-card/SearchedVideoC
 
 function SearchedResultsPage() {
     const { input } = useParams();
-    const [searchedVideos, setSearchedVideos] = useState(video);
+    const [searchedVideos, setSearchedVideos] = useState([]);
+
+    useEffect(() => {
+
+    }, [])
     
     return (
         <div className="searched-results-page">
