@@ -32,6 +32,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
+}
+
+.search-box .search-button:visited {
+    color: black;
 }
 
 .search-box .search-button:hover {

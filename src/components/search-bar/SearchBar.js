@@ -25,7 +25,7 @@ function SearchBar(props) {
     return (
         <div className="search-box">
             <input onChange={handleChange} placeholder="Search" value={input} type="text"/>
-            <Link to={`/search/${input}`} className="search-button" onClick={() => { setActiveTab(''); handleSubmit()}}>
+            <Link to={input === '' ? '/' : `/search/${input}`} className="search-button" onClick={() => { setActiveTab(''); handleSubmit()}}>
                 <RxMagnifyingGlass/>
             </Link>
             <button className={`clear-search-bar ${input.length ? 'show' : ''}`} onClick={clearSearchBar}><RxCross1/></button>
