@@ -9,6 +9,12 @@
 .searched-video-card .thumbnail {
     position: relative;
     max-height: 180px;
+    max-width: 320px;
+}
+
+.searched-video-card .thumbnail > img {
+    max-width: 100%;
+    border-radius: 12px;
 }
 
 .searched-video-card .thumbnail > .duration {
@@ -80,4 +86,63 @@
 
 .searched-video-card:hover .video-actions {
     opacity: 1;
+}
+
+@media(max-width: 850px) {
+    .searched-video-card .info > .description {
+        display: none;
+    }
+}
+
+@media(max-width: 800px) {
+    .searched-video-card {
+        grid-template-columns: 275px 1fr;
+    }
+
+    .searched-video-card .thumbnail {
+        width: 275px;
+    }
+
+    .searched-video-card .info > .video-details > .video-title {
+        font-size: 1.15rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .searched-video-card {
+        grid-template-columns: 220px 1fr;
+    }
+
+    .searched-video-card .thumbnail {
+        width: 220px;
+    }
+
+    .searched-video-card .thumbnail > .duration {
+        font-size: 0.8rem;
+    }
+
+    .searched-video-card .info > .video-details > .video-title {
+        font-size: 1rem;
+    }
+
+    .searched-video-card .info > .video-details > .views-date,
+    .searched-video-card .info > .channel-details {
+        font-size: 0.8rem;
+    }
+
+    .searched-video-card .info > .channel-details {
+        gap: 0.4rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .searched-video-card .info > .video-details > .video-title {
+        font-size: 0.85rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .searched-video-card .info {
+        overflow: hidden;
+    }
 }
