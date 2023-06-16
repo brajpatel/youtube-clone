@@ -8,15 +8,15 @@ function HomePage() {
     const [loading, setLoading] = useState(true);
     const [homeVideos, setHomeVideos] = useState([]);
 
-    useEffect(() => {
-        setLoading(true);
+    // useEffect(() => {
+    //     setLoading(true);
 
-        const setVideos = async () => {
-            setHomeVideos(await getPopularVideos());
-        }
+    //     const setVideos = async () => {
+    //         setHomeVideos(await getPopularVideos());
+    //     }
 
-        setVideos();
-    }, []);
+    //     setVideos();
+    // }, []);
 
     const getVideos = async () => {
         const videos = await getPopularVideos();
