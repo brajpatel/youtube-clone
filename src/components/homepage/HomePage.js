@@ -6,7 +6,7 @@ import GeneralVideoCard from "../video-cards/general-video-card/GeneralVideoCard
 
 function HomePage() {
     const [loading, setLoading] = useState(true);
-    const [homeVideos, setHomeVideos] = useState(video);
+    const [homeVideos, setHomeVideos] = useState([]);
 
     // useEffect(() => {
     //     setLoading(true);

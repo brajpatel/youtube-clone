@@ -1,6 +1,6 @@
 import { request } from "./request";
 
-export const getVideoInfo = async () => {
+export const getVideoInfo = async (videoId) => {
     const response = await request("/videos", {
         params: {
             part: "snippet, contentDetails, statistics",
