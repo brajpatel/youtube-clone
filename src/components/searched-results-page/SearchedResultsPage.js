@@ -10,17 +10,19 @@ function SearchedResultsPage() {
     const [loading, setLoading] = useState(true);
     const [searchedVideos, setSearchedVideos] = useState([]);
 
+    // useEffect(() => {
+    //     setLoading(true);
+
+    //     const getSearchedVideos = async () => {
+    //         setSearchedVideos(getSearchResults(input));
+    //     }
+
+    //     getSearchedVideos();
+    // }, [input])
+
     useEffect(() => {
-        setLoading(true);
-
-        const getSearchedVideos = async () => {
-            setSearchedVideos(getSearchResults(input));
-        }
-
-        getSearchedVideos();
-    }, [input])
-
-    
+        searchedVideos.length ? setLoading(false) : setLoading(true);
+    }, [searchedVideos])
     
     return loading ?
     (
