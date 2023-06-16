@@ -5,6 +5,7 @@ import { FaRegKeyboard } from "react-icons/fa";
 import { BiCog } from "react-icons/bi";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { BiMessageError } from "react-icons/bi";
+import { BiHappyBeaming } from "react-icons/bi";
 
 function ExtraSettings() {
     return (
@@ -36,6 +37,10 @@ function ExtraSettings() {
             <li>
                 <BiMessageError className='icon'/>
                 <p>Send feedback</p>
+            </li>
+            <li>
+                <BiHappyBeaming className="icon"/>
+                <p>Thanks for coming!</p>
             </li>
         </>
     )
