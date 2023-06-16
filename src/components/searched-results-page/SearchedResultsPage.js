@@ -1,6 +1,7 @@
 import "./SearchedResultsPage.css";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Preloader from "../preloader/Preloader";
 import { getSearchResults } from "../../api/getSearchResults";
 import { BsFilterLeft } from "react-icons/bs";
 import SearchedVideoCard from "../video-cards/searched-video-card/SearchedVideoCard";
@@ -26,7 +27,7 @@ function SearchedResultsPage() {
     
     return loading ?
     (
-        <div>Loading</div>
+        <Preloader/>
     ) : (
         <div className="searched-results-page">
             <div className="filter">
