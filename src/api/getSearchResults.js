@@ -6,7 +6,7 @@ export const getSearchResults = async (input) => {
             part: "snippet",
             q: input,
             type: "video",
-            RegionCode: "GB",
+            regionCode: "GB",
             maxResults: 10
         }
     })
