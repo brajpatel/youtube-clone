@@ -8,6 +8,7 @@ import { BsBell } from "react-icons/bs";
 import AccountSettings from "../account-settings/AccountSettings";
 
 function SignedInHeader() {
+    const [activeTab, setActiveTab] = useState('');
     const [isVisible, setIsVisible] = useState(false);
 
     const toggleAccountSettings = () => {
@@ -18,7 +19,7 @@ function SignedInHeader() {
         <header className="signed-in-header">
             <img className="youtube-logo" src={youtubeLogo} alt="youtube-logo"/>
             <div className="header-middle">
-                <SearchBar/>
+                <SearchBar setActiveTab={setActiveTab}/>
                 <div className="header-icon">
                     <FaMicrophone/>
                 </div>

@@ -6,7 +6,6 @@ import { RxCross1 } from "react-icons/rx";
 
 function SearchBar(props) {
     const { setActiveTab } = props;
-    
     const [input, setInput] = useState('');
 
     const handleChange = (e) => {
