@@ -6,8 +6,7 @@ export const getPopularVideos = async () => {
             part: "snippet, contentDetails, statistics",
             chart: "mostPopular",
             regionCode: "GB",
-            maxResults: 12,
-            pageToken: ""
+            maxResults: 12
         },
     }).catch((err) => {
         console.log(err);
