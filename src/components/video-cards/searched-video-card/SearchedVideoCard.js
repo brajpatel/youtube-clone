@@ -33,13 +33,13 @@ function SearchedVideoCard(props) {
         <div className="searched-video-card">
             <div className="thumbnail">
                 <img src={info.snippet.thumbnails.medium.url} alt='video-thumbnail'/>
-                <p className="duration">{videoDuration}</p>
+                <p className="duration">{formatVideoDuration(videoInfo[0].contentDetails.duration)}</p>
             </div>
 
             <div className="info">
                 <div className="video-details">
                     <p className="video-title">{info.snippet.title}</p>
-                    <p className='views-date'>{videoViews} <RxDotFilled/> {videoDate}</p>
+                    <p className='views-date'>{formatViewCount(videoInfo[0].statistics.viewCount)} <RxDotFilled/> {formatVideoDate(videoInfo[0].snippet.publishedAt)}</p>
                 </div>
                 <div className="channel-details">
                     <div className="channel-icon">
@@ -47,7 +47,7 @@ function SearchedVideoCard(props) {
                     </div>
                     <p>{info.snippet.channelTitle}</p>
                 </div>
-                <p className="description">{videoDescription}</p>
+                <p className="description">{formatVideoDescription(videoInfo[0].snippet.description)}</p>
             </div>
 
             <p className="video-actions"><HiOutlineDotsVertical/></p>
