@@ -14,22 +14,23 @@ function GeneralVideoCard(props) {
     const [videoDate, setVideoDate] = useState('');
 
     useEffect(() => {
-        setVideoDuration(formatVideoDuration(info.contentDetails.duration));
-        setVideoViews(formatViewCount(info.statistics.viewCount));
-        setVideoDate(formatVideoDate(info.snippet.publishedAt));
-
-        // const getIcon = async () => {
-        //     setChannelIcon(await getChannelIcon(info.snippet.channelId));
-        // }
-
-        // getIcon();
+        getIcon();
     }, []);
+
+    const getIcon = async () => {
+        try {
+            setChannelIcon(await getChannelIcon(info.snippet.channelId));
+        }
+        catch(err) {
+            console.log(err);
+        }
+    }
 
     return (
         <div className="general-video-card">
             <div className="thumbnail">
                 <img src={info.snippet.thumbnails.medium.url} alt='video-thumbnail'/>
-                <p className='duration'>{videoDuration}</p>
+                <p className='duration'>{formatVideoDuration(info.contentDetails.duration)}</p>
             </div>
             <div className='bottom'>
                 <div className='channel-icon'>
@@ -39,7 +40,7 @@ function GeneralVideoCard(props) {
                 <div className='info'>
                     <p className='video-title'>{info.snippet.title}</p>
                     <p>{info.snippet.channelTitle}</p>
-                    <p className='views-date'>{videoViews} <RxDotFilled/> {videoDate}</p>
+                    <p className='views-date'>{formatViewCount(info.statistics.viewCount)} <RxDotFilled/> {formatVideoDate(info.snippet.publishedAt)}</p>
                 </div>
             </div>
         </div>
