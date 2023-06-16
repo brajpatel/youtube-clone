@@ -14,7 +14,6 @@ function SearchedVideoCard(props) {
     const [videoInfo, setVideoInfo] = useState([]);
     const [channelIcon, setChannelIcon] = useState('');
 
-
     useEffect(() => {
         getInfo();
     }, []);
