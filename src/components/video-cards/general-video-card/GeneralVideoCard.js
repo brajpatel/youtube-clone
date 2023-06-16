@@ -8,10 +8,7 @@ import { RxDotFilled } from "react-icons/rx";
 
 function GeneralVideoCard(props) {
     const { info } = props;
-    const [videoDuration, setVideoDuration] = useState('');
     const [channelIcon, setChannelIcon] = useState('');
-    const [videoViews, setVideoViews] = useState('');
-    const [videoDate, setVideoDate] = useState('');
 
     useEffect(() => {
         getIcon();
