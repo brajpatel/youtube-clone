@@ -1,11 +1,12 @@
 import "./SearchedVideoCard.css";
 import { useEffect, useState } from "react";
+import { getVideoInfo } from "../../../api/getVideoInfo";
 import { formatVideoDuration } from '../../../utils/formatVideoDuration';
 import { getChannelIcon } from '../../../api/getChannelIcon';
 import { formatViewCount } from '../../../utils/formatViewCount';
 import { formatVideoDate } from '../../../utils/formatVideoDate';
 import { formatVideoDescription } from "../../../utils/formatVideoDescription";
-import { RxDotFilled, RxStretchHorizontally } from "react-icons/rx";
+import { RxDotFilled } from "react-icons/rx";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 
 function SearchedVideoCard(props) {
@@ -19,7 +20,13 @@ function SearchedVideoCard(props) {
     }, []);
 
     const getInfo = async () => {
-
+        try {
+            setVideoInfo(await getVideoInfo(info.id.videoId));
+            setChannelIcon(await getChannelIcon(info.snippet.channelId));
+        }
+        catch(err) {
+            console.log(err);
+        }
     }
 
     return (
