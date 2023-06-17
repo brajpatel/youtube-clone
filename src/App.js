@@ -22,6 +22,7 @@ function App() {
           <Route path="/library" element={<SignedOutLibrary/>}/>
           <Route path="/history" element={<SignedOutHistory/>}/>
           <Route path="/search/:input" element={<SearchedResultsPage/>}/>
+          <Route path="/watch/:id" element={<WatchPage/>}/>
         </Routes>
       </BrowserRouter>
     </div>
