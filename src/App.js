@@ -8,6 +8,7 @@ import SignedOutHistory from './components/signed-out-package/signed-out-pages/S
 import SignedInPackage from './components/signed-in-package/SignedInPackage';
 import HomePage from './components/homepage/HomePage';
 import SearchedResultsPage from './components/searched-results-page/SearchedResultsPage';
+import WatchPage from './components/watch-page/WatchPage';
 
 function App() {
   const [signedIn, setSignedIn] = useState(false);
