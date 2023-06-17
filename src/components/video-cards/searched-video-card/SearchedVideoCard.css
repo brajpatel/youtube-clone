@@ -1,5 +1,14 @@
-.searched-video-card {
+.video-link {
     width: 95%;
+    color: black;
+}
+
+.video-link:visited {
+    color: black;
+}
+
+.searched-video-card {
+    width: 100%;
     display: grid;
     grid-template-columns: 320px 1fr;
     gap: 1rem;
