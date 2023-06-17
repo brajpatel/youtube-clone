@@ -48,7 +48,7 @@ function SearchedVideoCard(props) {
         <Link
         to={`/watch/${formattedInfo.id}`}
         state={videoInfo[0]}
-        className="video-link"
+        className="searched-video-link"
         >
             <div className="searched-video-card">
                 <div className="thumbnail">
