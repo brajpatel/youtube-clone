@@ -4,19 +4,20 @@ import Preloader from "../preloader/Preloader";
 import { getPopularVideos } from "../../api/getPopularVideos";
 import GeneralVideoCard from "../video-cards/general-video-card/GeneralVideoCard";
 
-function HomePage() {
+function HomePage(props) {
+    const { setActiveTab } = props;
     const [loading, setLoading] = useState(true);
     const [homeVideos, setHomeVideos] = useState([]);
 
-    // useEffect(() => {
-    //     setLoading(true);
+    useEffect(() => {
+        setLoading(true);
 
-    //     const setVideos = async () => {
-    //         setHomeVideos(await getPopularVideos());
-    //     }
+        const setVideos = async () => {
+            setHomeVideos(await getPopularVideos());
+        }
 
-    //     setVideos();
-    // }, []);
+        setVideos();
+    }, []);
 
     const getVideos = async () => {
         const videos = await getPopularVideos();
@@ -25,7 +26,11 @@ function HomePage() {
 
     useEffect(() => {
         homeVideos.length ? setLoading(false) : setLoading(true);
-    })
+    }, [homeVideos])
+
+    const removeTab = () => {
+        setActiveTab('');
+    }
     
     return loading ?
     (
@@ -34,7 +39,7 @@ function HomePage() {
         <div className="home-page">
             {homeVideos.map((item, index) => {
                 return (
-                    <GeneralVideoCard key={index} info={item}/>
+                    <GeneralVideoCard key={index} info={item} onClick={removeTab}/>
                 )
             })}
         </div>

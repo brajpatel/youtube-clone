@@ -12,13 +12,14 @@ import WatchPage from './components/watch-page/WatchPage';
 
 function App() {
   const [signedIn, setSignedIn] = useState(false);
+  const [activeTab, setActiveTab] = useState('home');
 
   return (
     <div className="app">
       <BrowserRouter>
-        <SignedOutPackage/>
+        <SignedOutPackage activeTab={activeTab} setActiveTab={setActiveTab}/>
         <Routes>
-          <Route path="/" element={<HomePage/>}/>
+          <Route path="/" element={<HomePage setActiveTab={setActiveTab}/>}/>
           <Route path="/subscriptions" element={<SignedOutSubscriptions/>}/>
           <Route path="/library" element={<SignedOutLibrary/>}/>
           <Route path="/history" element={<SignedOutHistory/>}/>
