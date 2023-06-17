@@ -1,5 +1,6 @@
 import "./SearchedVideoCard.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { getVideoInfo } from "../../../api/getVideoInfo";
 import { formatVideoDuration } from '../../../utils/formatVideoDuration';
 import { getChannelIcon } from '../../../api/getChannelIcon';
@@ -28,29 +29,46 @@ function SearchedVideoCard(props) {
         }
     }
 
+    const formattedInfo = videoInfo[0] ? {
+        ...videoInfo[0],
+        id: videoInfo[0].id.videoId,
+        duration: formatVideoDuration(videoInfo[0].contentDetails.duration),
+        views: formatViewCount(videoInfo[0].statistics.viewCount),
+        date: formatVideoDate(videoInfo[0].snippet.publishedAt),
+        description: formatVideoDescription(videoInfo[0].snippet.description)
+    } : {
+
+    }
+
     return (
-        <div className="searched-video-card">
-            <div className="thumbnail">
-                <img src={info.snippet.thumbnails.medium.url} alt='video-thumbnail'/>
-                <p className="duration">{formatVideoDuration(videoInfo[0].contentDetails.duration)}</p>
-            </div>
-
-            <div className="info">
-                <div className="video-details">
-                    <p className="video-title">{info.snippet.title}</p>
-                    <p className='views-date'>{formatViewCount(videoInfo[0].statistics.viewCount)} <RxDotFilled/> {formatVideoDate(videoInfo[0].snippet.publishedAt)}</p>
+        <Link
+        to={`/watch/${formattedInfo.id}`}
+        state={videoInfo[0]}
+        className="video-link"
+        >
+            <div className="searched-video-card">
+                <div className="thumbnail">
+                    <img src={info.snippet.thumbnails.medium.url} alt='video-thumbnail'/>
+                    <p className="duration">{formattedInfo.duration}</p>
                 </div>
-                <div className="channel-details">
-                    <div className="channel-icon">
-                        <img src={channelIcon} alt="channel-icon"/>
+
+                <div className="info">
+                    <div className="video-details">
+                        <p className="video-title">{info.snippet.title}</p>
+                        <p className='views-date'>{formattedInfo.views} <RxDotFilled/> {formattedInfo.date}</p>
                     </div>
-                    <p>{info.snippet.channelTitle}</p>
+                    <div className="channel-details">
+                        <div className="channel-icon">
+                            <img src={channelIcon} alt="channel-icon"/>
+                        </div>
+                        <p>{info.snippet.channelTitle}</p>
+                    </div>
+                    <p className="description">{formattedInfo.description}</p>
                 </div>
-                <p className="description">{formatVideoDescription(videoInfo[0].snippet.description)}</p>
-            </div>
 
-            <p className="video-actions"><HiOutlineDotsVertical/></p>
-        </div>
+                <p className="video-actions"><HiOutlineDotsVertical/></p>
+            </div>
+        </Link>
     )
 }
 
