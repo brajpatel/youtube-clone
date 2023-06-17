@@ -37,7 +37,11 @@ function SearchedVideoCard(props) {
         date: formatVideoDate(videoInfo[0].snippet.publishedAt),
         description: formatVideoDescription(videoInfo[0].snippet.description)
     } : {
-
+        id: '',
+        duration: '',
+        views: '',
+        date: '',
+        description: ''
     }
 
     return (
