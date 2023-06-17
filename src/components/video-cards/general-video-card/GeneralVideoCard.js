@@ -28,7 +28,7 @@ function GeneralVideoCard(props) {
         <Link
         to={`/watch/${info.id}`}
         state={info}
-        className="video-link"
+        className="general-video-link"
         >
             <div className="general-video-card">
                 <div className="thumbnail">

@@ -1,5 +1,14 @@
-.general-video-card {
+.general-video-link {
     max-width: 320px;
+    color: black;
+}
+
+.general-video-link:visited {
+    color: black;
+}
+
+.general-video-card {
+    width: 100%;
     display: grid;
     grid-template-rows: 180px 1fr;
     gap: 0.6rem;
