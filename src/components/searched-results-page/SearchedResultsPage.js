@@ -13,13 +13,17 @@ function SearchedResultsPage() {
 
     useEffect(() => {
         setLoading(true);
-
-        const getSearchedVideos = async () => {
-            setSearchedVideos(getSearchResults(input));
-        }
-
         getSearchedVideos();
     }, [input])
+
+    const getSearchedVideos = async () => {
+        try {
+            setSearchedVideos(getSearchResults(input));
+        }
+        catch(err) {
+            console.log(err);
+        }
+    }
 
     useEffect(() => {
         searchedVideos.length ? setLoading(false) : setLoading(true);
