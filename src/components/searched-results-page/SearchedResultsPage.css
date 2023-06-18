@@ -52,6 +52,10 @@
     text-align: center;
 }
 
+@media(max-width: 1300px) {
+    
+}
+
 @media(max-width: 700px) {
     .searched-results-page .filter > p {
         font-size: 1rem;
