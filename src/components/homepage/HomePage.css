@@ -1,6 +1,7 @@
 .homepage {
     grid-area: 2 / 2 / 3 / 3;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     padding: 1rem;
   }
 
