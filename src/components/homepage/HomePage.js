@@ -19,7 +19,7 @@ function HomePage(props) {
         setHomeVideos(await getPopularVideos());
     }
     
-    const getVideos = async () => {
+    const getMoreVideos = async () => {
         const videos = await getPopularVideos();
         setHomeVideos((prev) => [...prev, ...videos]);
     }
@@ -32,10 +32,14 @@ function HomePage(props) {
     (
         <Preloader/>
     ) : (
-        <div className="homepage">
+        <div className="homepage" id="scrollableDiv">
             <InfiniteScroll
             className="homepage-infinite-scroll"
-            
+            dataLength={homeVideos.length}
+            next={getMoreVideos}
+            hasMore={true}
+            scrollableTarget="scrollableDiv"
+            scrollThreshold={0.92}
             >
             {homeVideos.map((item, index) => {
                 return (
