@@ -54,6 +54,13 @@ function HomePage(props) {
                 )
             })}
             </InfiniteScroll>
+
+            {homeVideos.length >= 60 ?
+            (
+            <div className="homepage-end-message">
+                <p>Thanks for taking the time to check out my project!</p>
+            </div>
+            ) : null}
         </div>
     )
 }

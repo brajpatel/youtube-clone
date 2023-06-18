@@ -51,8 +51,8 @@ function SearchedResultsPage() {
                 <p><BsFilterLeft className="icon"/> Filters</p>
             </div>
             <InfiniteScroll
-            className="homepage-infinite-scroll"
-            dataLength={homeVideos.length}
+            className="search-page-infinite-scroll"
+            dataLength={searchedVideos.length}
             next={getMoreVideos}
             hasMore={true}
             scrollableTarget="scrollableSearch"
@@ -62,6 +62,13 @@ function SearchedResultsPage() {
                 return <SearchedVideoCard key={index} info={item}/>
             })}
             </InfiniteScroll>
+
+            {searchedVideos.length >= 30 ?
+            (
+            <div className="search-page-end-message">
+                <p>Thanks for taking the time to check out my project!</p>
+            </div>
+            ) : null}
         </div>
     )
 }
