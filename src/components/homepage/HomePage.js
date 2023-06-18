@@ -20,8 +20,15 @@ function HomePage(props) {
     }
     
     const getMoreVideos = async () => {
-        const videos = await getPopularVideos();
-        setHomeVideos((prev) => [...prev, ...videos]);
+        if(homeVideos.length >= 60) return;
+
+        try {
+            const videos = await getPopularVideos();
+            setHomeVideos((prev) => [...prev, ...videos]);
+        }
+        catch(err) {
+            console.log(err);
+        }
     }
 
     useEffect(() => {
