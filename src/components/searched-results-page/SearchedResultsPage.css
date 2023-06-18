@@ -7,7 +7,7 @@
 }
 
 .searched-results-page .filter {
-    width: 95%;
+    width: 80%;
     border-bottom: 1px solid rgb(200, 200, 200);
     display: flex;
     padding: 0.8rem 0;
@@ -28,7 +28,7 @@
 }
 
 .search-page-infinite-scroll {
-    width: 95%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -53,7 +53,23 @@
 }
 
 @media(max-width: 1300px) {
-    
+    .searched-results-page .filter {
+        width: 90%;
+    }
+
+    .search-page-infinite-scroll {
+        width: 90%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .searched-results-page .filter {
+        width: 95%;
+    }
+
+    .search-page-infinite-scroll {
+        width: 95%;
+    }
 }
 
 @media(max-width: 700px) {
