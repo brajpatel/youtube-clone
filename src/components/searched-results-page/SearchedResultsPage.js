@@ -18,7 +18,7 @@ function SearchedResultsPage() {
 
     const getSearchedVideos = async () => {
         try {
-            setSearchedVideos(getSearchResults(input));
+            setSearchedVideos(await getSearchResults(input));
         }
         catch(err) {
             console.log(err);
