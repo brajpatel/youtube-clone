@@ -11,14 +11,13 @@ function HomePage(props) {
 
     useEffect(() => {
         setLoading(true);
-
-        const setVideos = async () => {
-            setHomeVideos(await getPopularVideos());
-        }
-
         setVideos();
     }, []);
 
+    const setVideos = async () => {
+        setHomeVideos(await getPopularVideos());
+    }
+    
     const getVideos = async () => {
         const videos = await getPopularVideos();
         setHomeVideos((prev) => [...prev, ...videos]);
