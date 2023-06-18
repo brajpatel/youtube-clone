@@ -27,6 +27,8 @@ function SearchedResultsPage() {
     }
 
     const getMoreVideos = async () => {
+        return;
+
         if(searchedVideos.length >= 30) return;
 
         try {

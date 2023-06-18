@@ -12,7 +12,7 @@ function HomePage(props) {
 
     useEffect(() => {
         setLoading(true);
-        setVideos();
+        // setVideos();
     }, []);
 
     const setVideos = async () => {
@@ -20,6 +20,8 @@ function HomePage(props) {
     }
     
     const getMoreVideos = async () => {
+        return;
+        
         if(homeVideos.length >= 60) return;
 
         try {
