@@ -8,7 +8,7 @@ import { formatVideoDate } from '../../../utils/formatVideoDate';
 import { RxDotFilled } from "react-icons/rx";
 
 function GeneralVideoCard(props) {
-    const { info } = props;
+    const { info, setActiveTab } = props;
     const [channelIcon, setChannelIcon] = useState('');
 
     useEffect(() => {
@@ -29,6 +29,7 @@ function GeneralVideoCard(props) {
         to={`/watch/${info.id}`}
         state={info}
         className="general-video-link"
+        onClick={() => setActiveTab('')}
         >
             <div className="general-video-card">
                 <div className="thumbnail">

@@ -1,4 +1,4 @@
-.home-page {
+.homepage {
     grid-area: 2 / 2 / 3 / 3;
     overflow: auto;
     display: flex;

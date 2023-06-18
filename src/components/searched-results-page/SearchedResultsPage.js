@@ -13,7 +13,7 @@ function SearchedResultsPage() {
 
     useEffect(() => {
         setLoading(true);
-        getSearchedVideos();
+        // getSearchedVideos();
     }, [input])
 
     const getSearchedVideos = async () => {

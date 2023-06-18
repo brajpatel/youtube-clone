@@ -1,6 +1,7 @@
 import "./HomePage.css";
 import { useEffect, useState } from "react";
 import Preloader from "../preloader/Preloader";
+import InfiniteScroll from "react-infinite-scroll-component";
 import { getPopularVideos } from "../../api/getPopularVideos";
 import GeneralVideoCard from "../video-cards/general-video-card/GeneralVideoCard";
 
@@ -26,21 +27,22 @@ function HomePage(props) {
     useEffect(() => {
         homeVideos.length ? setLoading(false) : setLoading(true);
     }, [homeVideos])
-
-    const removeTab = () => {
-        setActiveTab('');
-    }
     
     return loading ?
     (
         <Preloader/>
     ) : (
-        <div className="home-page">
+        <div className="homepage">
+            <InfiniteScroll
+            className="homepage-infinite-scroll"
+            
+            >
             {homeVideos.map((item, index) => {
                 return (
-                    <GeneralVideoCard key={index} info={item} onClick={removeTab}/>
+                    <GeneralVideoCard key={index} info={item} setActiveTab={setActiveTab}/>
                 )
             })}
+            </InfiniteScroll>
         </div>
     )
 }
