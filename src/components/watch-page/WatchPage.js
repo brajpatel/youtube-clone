@@ -22,12 +22,13 @@ function WatchPage() {
     }
 
     return (
-        <div>
+        <div className='watch-page'>
             <VideoPlayer state={state}/>
-            <div>
+
+            <div className='watch-page-bottom'>
                 <div>
                     <div>
-                        video and channel stuff
+                        <img src={channelIcon} alt="channel icon"/>
                     </div>
                     <div>
                         comments
