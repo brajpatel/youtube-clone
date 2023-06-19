@@ -1,0 +1,19 @@
+.watch-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.watch-page-bottom {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.watch-page-bottom > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
