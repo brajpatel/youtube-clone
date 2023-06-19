@@ -1,10 +1,9 @@
 import './WatchPage.css';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getChannelIcon } from "../../api/getChannelIcon";
 import { getChannelSubs } from "../../api/getChannelSubs";
 import { formatViewCount } from "../../utils/formatViewCount";
-import { useEffect, useState } from 'react';
-import {  } from 'react';
 
 function WatchPage() {
     const location = useLocation();
@@ -18,7 +17,7 @@ function WatchPage() {
 
     const getChannelInfo = async () => {
         setChannelIcon(await getChannelIcon(state.snippet.channelId));
-        setChannelSubs(await getChannelIcon(state.snippet.channelId));
+        setChannelSubs(await getChannelSubs(state.snippet.channelId));
     }
 
     return (
