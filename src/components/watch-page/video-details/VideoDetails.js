@@ -1,8 +1,8 @@
-import './VideoDetailscss';
+import './VideoDetails.css';
 import { formatSubscriberCount } from '../../../utils/formatSubscriberCount';
 import { formatLikeCount } from '../../../utils/formatLikeCount';
 import { formatViewCount } from '../../../utils/formatViewCount';
-import { FiDroplet, FiThumbsUp } from "react-icons/fi";
+import { FiThumbsUp } from "react-icons/fi";
 import { FiThumbsDown } from "react-icons/fi";
 import { RiShareForwardLine } from "react-icons/ri";
 import { BsThreeDots } from "react-icons/bs";
@@ -24,7 +24,7 @@ function VideoDetails(props) {
                     </div>
 
                     <div>
-                        <div className='subscriber-button'>Subscribe</div>
+                        <div className='subscribe-button'>Subscribe</div>
                     </div>
                 </div>
 

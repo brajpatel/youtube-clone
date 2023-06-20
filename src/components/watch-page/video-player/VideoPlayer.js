@@ -6,7 +6,7 @@ function WatchScreen(props) {
     return (
         <div className='video-player'>
             <iframe
-            src={`https://www.youtube.com/embed/${state.id}?autoplay=1&muted=1`}
+            src={`https://www.youtube.com/embed/${state.id}`}
             title="YouTube Video Player"
             allow='autoplay'
             allowFullScreen
@@ -16,3 +16,5 @@ function WatchScreen(props) {
 }
 
 export default WatchScreen;
+
+// ?autoplay=1&muted=1

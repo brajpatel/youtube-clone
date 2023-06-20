@@ -80,7 +80,7 @@
     background: rgb(245, 245, 245);
 }
 
-.likes.likes-dislikes > p:hover,
+.likes-dislikes > p:hover,
 .share:hover,
 .more-actions:hover {
     background: rgb(225, 225, 225);
