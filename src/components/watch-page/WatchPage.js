@@ -27,16 +27,15 @@ function WatchPage() {
 
             <div className='watch-page-bottom'>
                 <div>
-                    <div>
-                        <img src={channelIcon} alt="channel icon"/>
-                    </div>
-                    <div>
-                        comments
-                    </div>
+                    
                 </div>
 
                 <div>
                     related videos
+                </div>
+
+                <div>
+                    comments
                 </div>
             </div>
         </div>
