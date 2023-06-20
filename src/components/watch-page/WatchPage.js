@@ -2,6 +2,7 @@ import './WatchPage.css';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import VideoPlayer from './video-player/VideoPlayer';
+import VideoDetails from './video-details/VideoDetails';
 import { getChannelIcon } from "../../api/getChannelIcon";
 import { getChannelSubs } from "../../api/getChannelSubs";
 import { formatViewCount } from "../../utils/formatViewCount";
@@ -27,7 +28,7 @@ function WatchPage() {
 
             <div className='watch-page-bottom'>
                 <div>
-                    
+                    <VideoDetails state={state} channelIcon={channelIcon} channelSubs={channelSubs}/>
                 </div>
 
                 <div>
