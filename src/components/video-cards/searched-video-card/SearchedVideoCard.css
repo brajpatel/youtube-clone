@@ -74,7 +74,7 @@
     border-radius: 50px;
 }
 
-.video-actions {
+.searched-video-card > .video-actions {
     height: 30px;
     width: 30px;
     display: flex;
@@ -89,7 +89,7 @@
     opacity: 0;
 }
 
-.video-actions:hover {
+.searched-video-card > .video-actions:hover {
     background: rgb(230, 230, 230);
 }
 

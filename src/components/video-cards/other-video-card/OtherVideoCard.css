@@ -1,0 +1,84 @@
+.other-video-link {
+    width: 100%;
+    color: black;
+}
+
+.other-video-link:visited {
+    color: black;
+}
+
+.other-video-card {
+    position: relative;
+    max-height: 110px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 0.4rem;
+}
+
+.other-video-card .thumbnail {
+    position: relative;
+    max-height: 110px;
+}
+
+.other-video-card .thumbnail > img {
+    max-height: 100%;
+    border-radius: 12px;
+}
+
+.other-video-card .thumbnail > .duration {
+    background: rgb(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 8px;
+    padding: 4px 5px;
+    font-size: 0.8rem;
+}
+
+.other-video-card .video-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.other-video-card .video-details > .video-title {
+    font-size: 0.95rem;
+    overflow: hidden;
+    max-height: 40%;
+    width: 95%;
+}
+
+.other-video-card .video-details > p:not(:first-child) {
+    color: rgb(95, 95, 95);
+    font-size: 0.85rem;
+}
+
+.other-video-card > .video-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 1;
+}
+
+.other-video-card:hover .video-actions {
+    opacity: 1;
+}
+
+@media(max-width: 1000px) {
+    .other-video-card {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .other-video-card .thumbnail {
+        height: auto;
+        width: 200px;
+    }
+
+    .other-video-card .thumbnail > img {
+        width: 100%;
+    }
+}
