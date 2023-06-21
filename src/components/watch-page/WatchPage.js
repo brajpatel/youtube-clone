@@ -5,21 +5,43 @@ import VideoPlayer from './video-player/VideoPlayer';
 import VideoDetails from './video-details/VideoDetails';
 import { getChannelIcon } from "../../api/getChannelIcon";
 import { getChannelSubs } from "../../api/getChannelSubs";
-import { formatViewCount } from "../../utils/formatViewCount";
+import { getPopularVideos } from "../../api/getPopularVideos";
+import OtherVideoCard from "../video-cards/other-video-card/OtherVideoCard";
 
 function WatchPage() {
     const location = useLocation();
     const { state } = location;
     const [channelIcon, setChannelIcon] = useState('');
     const [channelSubs, setChannelSubs] = useState('');
+    const [popularVideos, setPopularVideos] = useState(video);
 
     useEffect(() => {
         getChannelInfo();
+        getVideos();
     }, [])
 
     const getChannelInfo = async () => {
         setChannelIcon(await getChannelIcon(state.snippet.channelId));
         setChannelSubs(await getChannelSubs(state.snippet.channelId));
+    }
+
+    const getVideos = async () => {
+        let videos = await getPopularVideos();
+        setPopularVideos(videos.slice(0, 10));
+    }
+
+    const getMoreVideos = async () => {
+        // return;
+
+        if(popularVideos.length >= 30) return;
+
+        try {
+            const videos = await getPopularVideos();
+            setPopularVideos((prev) => [...prev, ...videos.slice(0, 10)]);
+        }
+        catch(err) {
+            console.log(err);
+        }
     }
 
     return (
@@ -31,12 +53,17 @@ function WatchPage() {
                     <VideoDetails state={state} channelIcon={channelIcon} channelSubs={channelSubs}/>
                 </div>
 
-                <div>
-                    related videos
+                <div className='other-videos'>
+                    {popularVideos.map((item, index) => {
+                        return <OtherVideoCard key={index} info={item}/>
+                    })}
+                    <button
+                    className={`show-more-videos ${popularVideos.length >= 30 ? 'hide' : ''}`}
+                    onClick={getMoreVideos}>Show more</button>
                 </div>
 
                 <div>
-                    comments
+                    comments - fix gap above me
                 </div>
             </div>
         </div>
