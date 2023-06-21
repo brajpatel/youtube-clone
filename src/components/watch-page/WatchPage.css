@@ -11,6 +11,7 @@
     width: 95%;
     display: grid;
     grid-template: minmax(80px, 1fr) 1fr / 1.5fr 1fr;
+    gap: 0.6rem;
 }
 
 .watch-page-bottom > div:first-child {

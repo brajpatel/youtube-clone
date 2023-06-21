@@ -73,7 +73,7 @@ function WatchPage() {
 
 export default WatchPage;
 
-const info = [
+const video = [
     {
         "kind": "youtube#video",
         "etag": "FuPvGUyeiMCdov3upme_Kk6UtFI",

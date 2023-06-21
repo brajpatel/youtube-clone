@@ -136,7 +136,7 @@
 }
 
 .description-box {
-    min-height: 80px;
+    height: 80px;
     background: rgb(245, 245, 245);
     border-radius: 12px;
     display: flex;

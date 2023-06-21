@@ -1,8 +1,8 @@
 import './OtherVideoCard.css';
 import { Link } from 'react-router-dom';
-import  { formatVideoDuration } from '../../../utils/formatVideoDuration';
-import  { formatViewCount } from '../../../utils/formatViewCount';
-import  { formatVideoDate } from '../../../utils/formatVideoDate';
+import { formatVideoDuration } from '../../../utils/formatVideoDuration';
+import { formatViewCount } from '../../../utils/formatViewCount';
+import { formatVideoDate } from '../../../utils/formatVideoDate';
 import { RxDotFilled } from "react-icons/rx";
 import { HiOutlineDotsVertical } from "react-icons/hi";
 
@@ -24,7 +24,7 @@ function OtherVideoCard(props) {
                 <div className='video-details'>
                     <p className='video-title'>{info.snippet.title}</p>
                     <p>{info.snippet.channelTitle}</p>
-                    <p className='views-date'>{formatViewCount(info.statistics.formatViewCount)} <RxDotFilled/> {formatVideoDate(info.snippet.publishedAt)}</p>
+                    <p className='views-date'>{formatViewCount(info.statistics.viewCount)} <RxDotFilled/> {formatVideoDate(info.snippet.publishedAt)}</p>
                 </div>
 
                 <p className='video-actions'><HiOutlineDotsVertical/></p>
@@ -32,3 +32,5 @@ function OtherVideoCard(props) {
         </Link>
     )
 }
+
+export default OtherVideoCard;
