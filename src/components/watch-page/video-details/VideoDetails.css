@@ -135,6 +135,53 @@
     align-items: center;
 }
 
+.description-box {
+    min-height: 80px;
+    background: rgb(245, 245, 245);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.description-box:hover {
+    background: rgb(225, 225, 225);
+}
+
+.description-box.open {
+    height: max-content;
+    cursor: default;
+}
+
+.description-box.open:hover {
+    background: rgb(245, 245, 245);
+}
+
+.description-box > div {
+    font-weight: bold;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.description-box .description {
+    font-size: 0.9rem;
+    overflow: hidden;
+}
+
+.read-more-button {
+    background: none;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
 @media(max-width: 1300px) {
     .video-title {
         font-size: 1.1rem;
@@ -145,6 +192,7 @@
     .channel-video-details {
         flex-direction: column;
         justify-content: flex-start;
+        gap: 0.6rem;
     }
 
     .user-actions {
