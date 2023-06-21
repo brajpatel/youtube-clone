@@ -53,6 +53,7 @@ function WatchPage() {
                     <VideoDetails state={state} channelIcon={channelIcon} channelSubs={channelSubs}/>
                 </div>
 
+                {/* I WOULD'VE IMPLEMENTED RELATED VIDEOS BUT YOUTUBE IS NO LONGER SUPPORTING THE 'relatedToVideoId' PARAMETER FROM 7TH AUGUST 2023 */}
                 <div className='other-videos'>
                     {popularVideos.map((item, index) => {
                         return <OtherVideoCard key={index} info={item}/>
@@ -62,7 +63,7 @@ function WatchPage() {
                     onClick={getMoreVideos}>Show more</button>
                 </div>
 
-                <div>
+                <div className='comments'>
                     comments - fix gap above me
                 </div>
             </div>
