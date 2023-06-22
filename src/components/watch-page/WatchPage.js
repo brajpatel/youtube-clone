@@ -7,6 +7,9 @@ import { getChannelIcon } from "../../api/getChannelIcon";
 import { getChannelSubs } from "../../api/getChannelSubs";
 import { getPopularVideos } from "../../api/getPopularVideos";
 import OtherVideoCard from "../video-cards/other-video-card/OtherVideoCard";
+import { getVideoComments } from "../../api/getVideoComments";
+import { formatCommentNumber } from "../../utils/formatCommentNumber";
+import { BsFilterLeft } from "react-icons/bs";
 
 function WatchPage() {
     const location = useLocation();
@@ -14,10 +17,13 @@ function WatchPage() {
     const [channelIcon, setChannelIcon] = useState('');
     const [channelSubs, setChannelSubs] = useState('');
     const [popularVideos, setPopularVideos] = useState(video);
+    const [comments, setComments] = useState([]);
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         getChannelInfo();
-        getVideos();
+        // getVideos();
+        // getComments();
     }, [])
 
     const getChannelInfo = async () => {
@@ -44,13 +50,23 @@ function WatchPage() {
         }
     }
 
+    const getComments = async () => {
+        setComments(await getVideoComments(state.id));
+    }
+
     return (
         <div className='watch-page'>
             <VideoPlayer state={state}/>
 
-            <div className='watch-page-bottom'>
+            <div className={`watch-page-bottom ${isOpen ? 'expand-row' : ''}`}>
                 <div>
-                    <VideoDetails state={state} channelIcon={channelIcon} channelSubs={channelSubs}/>
+                    <VideoDetails
+                    state={state}
+                    channelIcon={channelIcon}
+                    channelSubs={channelSubs}
+                    isOpen={isOpen}
+                    setIsOpen={setIsOpen}
+                    />
                 </div>
 
                 {/* I WOULD'VE IMPLEMENTED RELATED VIDEOS BUT YOUTUBE IS NO LONGER SUPPORTING THE 'relatedToVideoId' PARAMETER FROM 7TH AUGUST 2023 */}
@@ -63,8 +79,18 @@ function WatchPage() {
                     onClick={getMoreVideos}>Show more</button>
                 </div>
 
-                <div className='comments'>
-                    comments - fix gap above me
+                <div className='comments-container'>
+                    <div className='comment-count'>
+                        <p>{formatCommentNumber(state.statistics.commentCount)}</p>
+                        <p className='sort-by'><BsFilterLeft className='icon'/> Sort by</p>
+                    </div>
+
+                    <div className='add-comment'>
+                        <div className='profile-pic'>
+                            <p>B</p>
+                        </div>
+                        <input placeholder='Add a comment...' type='text'/>
+                    </div>
                 </div>
             </div>
         </div>

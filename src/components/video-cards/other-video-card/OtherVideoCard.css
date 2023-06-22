@@ -79,6 +79,10 @@
     }
 
     .other-video-card .thumbnail > img {
-        width: 200pxy;
+        width: 200px;
+    }
+
+    .other-video-card .video-details > .video-title {
+        max-height: 60%;
     }
 }

@@ -10,8 +10,7 @@ import { RiShareForwardLine } from "react-icons/ri";
 import { BsThreeDots } from "react-icons/bs";
 
 function VideoDetails(props) {
-    const { state, channelIcon, channelSubs } = props;
-    const [isOpen, setIsOpen] = useState(false);
+    const { state, channelIcon, channelSubs, isOpen, setIsOpen } = props;
 
     return (
         <div className='video-details'>
@@ -67,6 +66,5 @@ function VideoDetails(props) {
         </div>
     )
 }
-
 
 export default VideoDetails;
