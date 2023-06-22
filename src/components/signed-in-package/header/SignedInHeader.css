@@ -34,7 +34,7 @@
     gap: 1.2rem;
 }
 
-.profile-pic,
+.header-end .profile-pic,
 .header-icon {
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-.profile-pic {
+.header-end .profile-pic {
     background: rgb(57, 107, 172);
     border-radius: 50px;
     height: 40px;
@@ -50,7 +50,7 @@
     font-size: 1.2rem;
 }
 
-.profile-pic > p {
+.header-end .profile-pic > p {
     color: #eaebea;
 }
 
