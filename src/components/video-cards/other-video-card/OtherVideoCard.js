@@ -16,7 +16,7 @@ function OtherVideoCard(props) {
         className="other-video-link"
         >
             <div className='other-video-card'>
-                <div>
+                <div className='thumbnail'>
                     <img src={info.snippet.thumbnails.medium.url} alt="video-thumbnail"/>
                     <p className='duration'>{formatVideoDuration(info.contentDetails.duration)}</p>
                 </div>
