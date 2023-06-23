@@ -1,6 +1,6 @@
 export function formatSubscriberCount(subscribers) {
     let subscribersNum = Number(subscribers);
-    let splitNum = subscribers.split('');
+    let splitNum = String(subscribers).split('');
 
     if(subscribersNum < 1000) {
         return subscribersNum === 1 ? '1 subscriber' : `${subscribers} subscribers`;

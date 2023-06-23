@@ -1,6 +1,6 @@
 export function formatLikeCount(likes) {
     let likesNum = Number(likes);
-    let splitNum = likes.split('');
+    let splitNum = String(likes).split('');
 
     if(likesNum < 1000) {
         return likes;

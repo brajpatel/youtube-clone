@@ -1,6 +1,6 @@
 export function formatViewCount(views) {
     let viewsNum = Number(views);
-    let splitNum = views.split('');
+    let splitNum = String(views).split('');
 
     if(viewsNum < 1000) {
         return viewsNum === 1 ? '1 view' : `${views} views`;
