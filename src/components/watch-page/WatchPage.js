@@ -10,6 +10,7 @@ import OtherVideoCard from "../video-cards/other-video-card/OtherVideoCard";
 import { getVideoComments } from "../../api/getVideoComments";
 import { formatCommentNumber } from "../../utils/formatCommentNumber";
 import { BsFilterLeft } from "react-icons/bs";
+import Comment from "./comment/Comment";
 
 function WatchPage() {
     const location = useLocation();
@@ -22,8 +23,8 @@ function WatchPage() {
 
     useEffect(() => {
         getChannelInfo();
-        // getVideos();
-        // getComments();
+        getVideos();
+        getComments();
     }, [])
 
     const getChannelInfo = async () => {
@@ -94,7 +95,7 @@ function WatchPage() {
 
                     <div className='comments'>
                         {comments.map((item, index) => {
-                            return
+                            return <Comment key={index} info={item}/>
                         })}
                     </div>
                 </div>

@@ -82,7 +82,7 @@
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1100px) {
     .other-video-card {
         grid-template-columns: 200px 1fr;
     }
