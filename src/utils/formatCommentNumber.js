@@ -8,21 +8,20 @@ export function formatCommentNumber(commentCount) {
     else {
         let num;
 
-        switch(numLength) {
-            case 4:
-                num = commentCount.slice(0, 1) + ',' + commentCount.slice(1);
-
-            case 5:
-                num = commentCount.slice(0, 2) + ',' + commentCount.slice(2);
-    
-            case 6:
-                num = commentCount.slice(0, 3) + ',' + commentCount.slice(3);
-
-            case 7:
-                num = commentCount.slice(0, 1) + ',' + commentCount.slice(1, 4) + ',' + commentCount.slice(4);
-
-            case 8:
-                num = commentCount.slice(0, 2) + ',' + commentCount.slice(2, 5) + ',' + commentCount.slice(5);
+        if(numLength === 4) {
+            num = commentCount.slice(0, 1) + ',' + commentCount.slice(1);
+        }
+        else if(numLength === 5) {
+            num = commentCount.slice(0, 2) + ',' + commentCount.slice(2);
+        }
+        else if(numLength === 6) {
+            num = commentCount.slice(0, 3) + ',' + commentCount.slice(3);
+        }
+        else if(numLength === 7) {
+            num = commentCount.slice(0, 1) + ',' + commentCount.slice(1, 4) + ',' + commentCount.slice(4);
+        }
+        else if(numLength === 8) {
+            num = commentCount.slice(0, 2) + ',' + commentCount.slice(2, 5) + ',' + commentCount.slice(5);
         }
 
         return `${num} Comments`;
