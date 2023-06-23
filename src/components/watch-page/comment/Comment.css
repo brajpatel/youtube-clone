@@ -1,0 +1,58 @@
+.comment-container {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 0.8rem;
+    font-size: 0.85rem;
+}
+
+.comment-container > img,
+.commenter,
+.comment-date,
+.comment-info div:last-child > p > .icon,
+.reply-button {
+    cursor: pointer;
+}
+
+.comment-container > img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.comment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.comment-info div {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.commenter {
+    font-weight: bold;
+}
+
+.comment-date {
+    color: rgb(95, 95, 95);
+}
+
+.comment-date:hover {
+    color: rgb(30, 30, 30);
+}
+
+.comment-info div:last-child > p {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.comment-info div:last-child > p > .icon {
+    font-size: 1rem;
+}
+
+.reply-button {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
