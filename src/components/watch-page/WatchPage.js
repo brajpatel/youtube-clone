@@ -91,6 +91,12 @@ function WatchPage() {
                         </div>
                         <input placeholder='Add a comment...' type='text'/>
                     </div>
+
+                    <div className='comments'>
+                        {comments.map((item, index) => {
+                            return
+                        })}
+                    </div>
                 </div>
             </div>
         </div>
