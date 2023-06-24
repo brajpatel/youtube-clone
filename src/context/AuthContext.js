@@ -14,12 +14,14 @@ function AuthContextProvider(props) {
     const [user, setUser] = useState(undefined);
 
     const signInUser = async () => {
-        let provider = new GoogleAuthProvider();
-        await signInWithPopup(getAuth(), provider);
+        setSignedIn(true);
+        // let provider = new GoogleAuthProvider();
+        // await signInWithPopup(getAuth(), provider);
     }
 
     const signOutUser = () => {
-        signOut(getAuth());
+        setSignedIn(false);
+        // signOut(getAuth());
     }
 
     onAuthStateChanged(getAuth(), (user) => {
