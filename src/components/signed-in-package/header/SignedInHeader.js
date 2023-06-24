@@ -1,5 +1,6 @@
 import "./SignedInHeader.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../../context/AuthContext";
 import youtubeLogo from "../../../assets/youtube-logo.png";
 import SearchBar from "../../search-bar/SearchBar";
 import { FaMicrophone } from "react-icons/fa";
@@ -8,6 +9,7 @@ import { BsBell } from "react-icons/bs";
 import AccountSettings from "../account-settings/AccountSettings";
 
 function SignedInHeader() {
+    const { user } = useContext(AuthContext);
     const [activeTab, setActiveTab] = useState('');
     const [isVisible, setIsVisible] = useState(false);
 
@@ -32,7 +34,7 @@ function SignedInHeader() {
                     <BsBell title="Notifications"/>
                 </div>
                 <div className="profile-pic" onClick={toggleAccountSettings}>
-                    <p>B</p>
+                    <img src={user.photo}/>
                     {isVisible ? <AccountSettings/> : null}
                 </div>
             </div>
