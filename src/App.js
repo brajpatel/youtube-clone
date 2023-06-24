@@ -1,6 +1,7 @@
 import './App.css';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AuthContext } from './context/AuthContext';
 import SignedOutPackage from './components/signed-out-package/SignedOutPackage';
 import SignedOutSubscriptions from './components/signed-out-package/signed-out-pages/SignedOutSubscriptions';
 import SignedOutLibrary from './components/signed-out-package/signed-out-pages/SignedOutLibrary';
@@ -11,12 +12,13 @@ import SearchedResultsPage from './components/searched-results-page/SearchedResu
 import WatchPage from './components/watch-page/WatchPage';
 
 function App() {
+  const { signedIn } = useContext(AuthContext);
   const [activeTab, setActiveTab] = useState('home');
 
   return (
     <div className="app">
       <BrowserRouter>
-        <SignedOutPackage activeTab={activeTab} setActiveTab={setActiveTab}/>
+        {signedIn ? <SignedInPackage/> : <SignedOutPackage activeTab={activeTab} setActiveTab={setActiveTab}/>}
         <Routes>
           <Route path="/" element={<HomePage setActiveTab={setActiveTab}/>}/>
           <Route path="/subscriptions" element={<SignedOutSubscriptions/>}/>
