@@ -27,8 +27,6 @@ function SearchedResultsPage() {
     }
 
     const getMoreVideos = async () => {
-        return;
-
         if(searchedVideos.length >= 30) return;
 
         try {
@@ -52,6 +50,7 @@ function SearchedResultsPage() {
             <div className="filter">
                 <p><BsFilterLeft className="icon"/> Filters</p>
             </div>
+            
             <InfiniteScroll
             className="search-page-infinite-scroll"
             dataLength={searchedVideos.length}
