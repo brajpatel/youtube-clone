@@ -1,9 +1,9 @@
 import './AccountSettings.css';
+import { useContext } from 'react';
+import { AuthContext } from '../../../context/AuthContext';
 import { FaRegUserCircle } from "react-icons/fa";
 import { MdExitToApp } from "react-icons/md";
 import ExtraSettings from '../../extra-settings/ExtraSettings';
-import { useContext } from 'react';
-import { AuthContext } from '../../../context/AuthContext';
 
 function AccountSettings() {
     const { signOut } = useContext(AuthContext);
@@ -24,7 +24,7 @@ function AccountSettings() {
                     <FaRegUserCircle className='icon'/>
                     <p>Your channel</p>
                 </li>
-                <li>
+                <li onClick={signOut}>
                     <MdExitToApp className='icon'/>
                     <p>Sign out</p>
                 </li>
