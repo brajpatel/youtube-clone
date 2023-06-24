@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
     getAuth,
     onAuthStateChanged,
@@ -13,24 +13,22 @@ function AuthContextProvider(props) {
     const [signedIn, setSignedIn] = useState(false);
     const [user, setUser] = useState(undefined);
 
-    const signIn = async () => {
+    const signInUser = async () => {
         let provider = new GoogleAuthProvider();
         await signInWithPopup(getAuth(), provider);
     }
 
-    const signOut = () => {
+    const signOutUser = () => {
         signOut(getAuth());
     }
 
-    useEffect(() => {
-        if(!!getAuth().currentUser) {
-            setSignedIn(true);
-        }
-    }, [user])
+    onAuthStateChanged(getAuth(), (user) => {
+        user ? setSignedIn(true) : setSignedIn(false);
+    })
 
     return (
-        <AuthContext.Provider value={{ signIn, signOut, signedIn }}>
-            {props.chidlren}
+        <AuthContext.Provider value={{ signInUser, signOutUser, signedIn }}>
+            {props.children}
         </AuthContext.Provider>
     )
 }

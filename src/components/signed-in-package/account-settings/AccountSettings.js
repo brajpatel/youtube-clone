@@ -6,7 +6,7 @@ import { MdExitToApp } from "react-icons/md";
 import ExtraSettings from '../../extra-settings/ExtraSettings';
 
 function AccountSettings() {
-    const { signOut } = useContext(AuthContext);
+    const { signOutUser } = useContext(AuthContext);
 
     return (
         <div className='account-settings'>
@@ -24,7 +24,7 @@ function AccountSettings() {
                     <FaRegUserCircle className='icon'/>
                     <p>Your channel</p>
                 </li>
-                <li onClick={signOut}>
+                <li onClick={signOutUser}>
                     <MdExitToApp className='icon'/>
                     <p>Sign out</p>
                 </li>

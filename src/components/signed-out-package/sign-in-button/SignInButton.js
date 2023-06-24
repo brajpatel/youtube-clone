@@ -4,10 +4,10 @@ import { AuthContext } from "../../../context/AuthContext";
 import { FaRegUserCircle } from "react-icons/fa";
 
 function SignInButton() {
-    const { signIn } = useContext(AuthContext);
+    const { signInUser } = useContext(AuthContext);
 
     return (
-        <button className="sign-in-button" onClick={signIn}><FaRegUserCircle/>Sign in</button>
+        <button className="sign-in-button" onClick={signInUser}><FaRegUserCircle/>Sign in</button>
     )
 }
 
