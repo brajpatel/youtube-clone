@@ -2,8 +2,12 @@ import './AccountSettings.css';
 import { FaRegUserCircle } from "react-icons/fa";
 import { MdExitToApp } from "react-icons/md";
 import ExtraSettings from '../../extra-settings/ExtraSettings';
+import { useContext } from 'react';
+import { AuthContext } from '../../../context/AuthContext';
 
 function AccountSettings() {
+    const { signOut } = useContext(AuthContext);
+
     return (
         <div className='account-settings'>
             <div className='account-profile'>

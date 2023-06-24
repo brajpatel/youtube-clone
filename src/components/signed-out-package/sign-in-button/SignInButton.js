@@ -1,4 +1,6 @@
 import "./SignInButton.css";
+import { useContext } from "react";
+import { AuthContext } from "../../../context/AuthContext";
 import { FaRegUserCircle } from "react-icons/fa";
 
 function SignInButton() {
