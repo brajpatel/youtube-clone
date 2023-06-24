@@ -11,7 +11,6 @@ import SearchedResultsPage from './components/searched-results-page/SearchedResu
 import WatchPage from './components/watch-page/WatchPage';
 
 function App() {
-  const [signedIn, setSignedIn] = useState(false);
   const [activeTab, setActiveTab] = useState('home');
 
   return (
