@@ -6,14 +6,12 @@ import { MdExitToApp } from "react-icons/md";
 import ExtraSettings from '../../extra-settings/ExtraSettings';
 
 function AccountSettings() {
-    const { signOutUser } = useContext(AuthContext);
+    const { signOutUser, user } = useContext(AuthContext);
 
     return (
         <div className='account-settings'>
             <div className='account-profile'>
-                <div className='profile-pic'>
-                    <p>B</p>
-                </div>
+                <img className='profile-pic' src={user.photo}/>
                 <div className='account-details'>
                     <p>Brajesh Patel</p>
                     <button>Manage your Google Account</button>
