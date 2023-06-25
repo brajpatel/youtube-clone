@@ -1,6 +1,7 @@
 .other-video-link {
     width: 100%;
     color: black;
+    z-index: 0;
 }
 
 .other-video-link:visited {
