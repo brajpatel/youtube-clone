@@ -31,17 +31,14 @@ function AuthContextProvider(props) {
     const [user, setUser] = useState(undefined);
 
     const signInUser = async () => {
-        // setSignedIn(true);
         let provider = new GoogleAuthProvider();
         await signInWithPopup(getAuth(), provider);
     }
 
     const signOutUser = () => {
-        // setSignedIn(false);
         signOut(getAuth());
     }
 
-    // Returns the signed-in user's profile Pic URL.
     const getProfilePicUrl = () => {
         return getAuth().currentUser.photoURL || './public/profile_placeholder.png';
     }
