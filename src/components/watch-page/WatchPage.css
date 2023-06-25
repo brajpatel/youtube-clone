@@ -95,16 +95,7 @@
 .add-comment > .profile-pic {
     height: 40px;
     width: 40px;
-    background: rgb(57, 107, 172);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
-    font-size: 1.2rem;
-}
-
-.add-comment > .profile-pic > p {
-    color: #eaebea;
 }
 
 .add-comment > input {

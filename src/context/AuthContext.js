@@ -28,7 +28,7 @@ const AuthContext = React.createContext();
 
 function AuthContextProvider(props) {
     const [signedIn, setSignedIn] = useState(false);
-    const [user, setUser] = useState(undefined);
+    const [user, setUser] = useState({ name: '', photo: ''});
 
     const signInUser = async () => {
         let provider = new GoogleAuthProvider();
@@ -58,7 +58,10 @@ function AuthContextProvider(props) {
         }
         else {
             setSignedIn(false);
-            setUser(undefined);
+            setUser({
+                name: '',
+                photo: ''
+            });
         }
       }
 

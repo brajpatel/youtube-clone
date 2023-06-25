@@ -1,6 +1,7 @@
 import './WatchPage.css';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { AuthContext } from "../../context/AuthContext";
 import VideoPlayer from './video-player/VideoPlayer';
 import VideoDetails from './video-details/VideoDetails';
 import { getChannelIcon } from "../../api/getChannelIcon";
@@ -10,9 +11,11 @@ import OtherVideoCard from "../video-cards/other-video-card/OtherVideoCard";
 import { getVideoComments } from "../../api/getVideoComments";
 import { formatCommentNumber } from "../../utils/formatCommentNumber";
 import { BsFilterLeft } from "react-icons/bs";
+import profile_placeholder from "./profile_placeholder.png";
 import Comment from "./comment/Comment";
 
 function WatchPage() {
+    const { user } = useContext(AuthContext);
     const location = useLocation();
     const { state } = location;
     const [channelIcon, setChannelIcon] = useState('');
@@ -85,9 +88,7 @@ function WatchPage() {
                     </div>
 
                     <div className='add-comment'>
-                        <div className='profile-pic'>
-                            <p>B</p>
-                        </div>
+                        <img className='profile-pic' src={user.photo !== '' ? user.photo : profile_placeholder}/>
                         <input placeholder='Add a comment...' type='text'/>
                     </div>
 
