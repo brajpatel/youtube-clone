@@ -43,15 +43,9 @@
 }
 
 .header-end .profile-pic {
-    background: rgb(57, 107, 172);
-    border-radius: 50px;
     height: 40px;
     width: 40px;
-    font-size: 1.2rem;
-}
-
-.header-end .profile-pic > p {
-    color: #eaebea;
+    border-radius: 50%;
 }
 
 .signed-in-header div > .header-icon {

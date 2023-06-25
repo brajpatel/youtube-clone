@@ -34,7 +34,7 @@ function SignedInHeader() {
                     <BsBell title="Notifications"/>
                 </div>
                 <div className="profile-pic" onClick={toggleAccountSettings}>
-                    <img src={user.photo}/>
+                    <img className="profile-pic" src={user.photo}/>
                     {isVisible ? <AccountSettings/> : null}
                 </div>
             </div>

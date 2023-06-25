@@ -33,8 +33,7 @@ function AuthContextProvider(props) {
     const signInUser = async () => {
         // setSignedIn(true);
         let provider = new GoogleAuthProvider();
-        await signInWithPopup(getAuth(), provider)
-                .then((res) => setUser(res.user));
+        await signInWithPopup(getAuth(), provider);
     }
 
     const signOutUser = () => {
@@ -42,18 +41,33 @@ function AuthContextProvider(props) {
         signOut(getAuth());
     }
 
+    // Returns the signed-in user's profile Pic URL.
+    const getProfilePicUrl = () => {
+        return getAuth().currentUser.photoURL || './public/profile_placeholder.png';
+    }
+    
+    // Returns the signed-in user's display name.
+    const getUserName = () => {
+        return getAuth().currentUser.displayName;
+    }
+
+    const authStateObserver = (user) => {
+        if (user) {
+            setSignedIn(true);
+            setUser({
+                name: getUserName(),
+                photo: getProfilePicUrl()
+            })
+        }
+        else {
+            setSignedIn(false);
+            setUser(undefined);
+        }
+      }
+
     useEffect(() => {
-        if(!user) return;
-
-        setUser({
-            name: user.displayName,
-            photo: user.photoURL
-        })
-    }, [user])
-
-    onAuthStateChanged(getAuth(), (user) => {
-        user ? setSignedIn(true) : setSignedIn(false);
-    })
+        onAuthStateChanged(getAuth(), authStateObserver);
+    }, [])
 
     return (
         <AuthContext.Provider value={{ signInUser, signOutUser, signedIn, user }}>
