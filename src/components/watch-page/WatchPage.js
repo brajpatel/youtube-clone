@@ -11,7 +11,7 @@ import OtherVideoCard from "../video-cards/other-video-card/OtherVideoCard";
 import { getVideoComments } from "../../api/getVideoComments";
 import { formatCommentNumber } from "../../utils/formatCommentNumber";
 import { BsFilterLeft } from "react-icons/bs";
-import profile_placeholder from "./profile_placeholder.png";
+import profile_placeholder from "./placeholder-image/profile_placeholder.png";
 import Comment from "./comment/Comment";
 
 function WatchPage() {
