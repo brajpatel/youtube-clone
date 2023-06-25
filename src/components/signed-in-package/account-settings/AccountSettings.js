@@ -13,7 +13,7 @@ function AccountSettings() {
             <div className='account-profile'>
                 <img className='profile-pic' src={user.photo}/>
                 <div className='account-details'>
-                    <p>Brajesh Patel</p>
+                    <p>{user.name}</p>
                     <button>Manage your Google Account</button>
                 </div>
             </div>
